@@ -1,0 +1,11 @@
+site_name: Dokumentace Dataspecer
+nav:
+  - Uvod: index.md
+  - Aplikacni profil: profil.md
+  - Datove modelovani: modelovani.md
+  
+
+    
+
+   
+  
