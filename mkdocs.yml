@@ -3,7 +3,8 @@ nav:
   - Uvod: index.md
   - Aplikacni profil: profil.md
   - Datove modelovani: modelovani.md
-  
+site_url: https://rudi1984.github.io/Dataspecer/
+site_dir: site
 
     
 

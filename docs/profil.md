@@ -1,5 +1,6 @@
 ## Vytvoření nového aplikačního profilu
-Při vytváření aplikačního profilu převezmeme třídy ze zvoleného aplikačního profilu. Vlastní prvky které chceme přidat nadefinujeme ve slovníku.
+Při vytváření aplikačního profilu převezmeme třídy ze zvoleného aplikačního profilu.
+ Vlastní prvky které chceme přidat nadefinujeme ve slovníku.
 
 ![Výběr typu projektu – Aplikační profil](img/vytvorit_aplikacniprofil.png)
 
@@ -57,13 +58,14 @@ Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené 
 ![Zobrazení třídy](img/katalog_vizualni.png)
 
 ## ▶️ Přidání atributů
-1. Atribut přidám symbolem plus.
+U tříd je následně třeba přidat atributy.
+1. Atribut přidám symbolem plus. Zvolím si například 
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
-U tříd je následně třeba definovat atributy:
+
 ![Atribut](img/atribut.png)
 
-
+## ▶️ Nadefinování vlastních pojmů ve Slovníku
 
 
 
