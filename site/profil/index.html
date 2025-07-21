@@ -94,6 +94,16 @@
               </ul>
             </li>
             
+            <li class="nav-item" data-bs-level="2"><a href="#pridani-vazeb-mezi-tridami" class="nav-link">▶️ Přidání vazeb mezi třídami</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#ciselnik" class="nav-link">▶️ Číselník</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
             <li class="nav-item" data-bs-level="2"><a href="#nadefinovani-vlastnich-pojmu-ve-slovniku" class="nav-link">▶️ Nadefinování vlastních pojmů ve Slovníku</a>
               <ul class="nav flex-column">
               </ul>
@@ -104,8 +114,7 @@
                     <div class="col-md-9" role="main">
 
 <h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
-<p>Při vytváření aplikačního profilu převezmeme třídy ze zvoleného aplikačního profilu.
- Vlastní prvky které chceme přidat nadefinujeme ve slovníku.</p>
+<p>Při vytváření aplikačního profilu přebírám prvky z</p>
 <p><img alt="Výběr typu projektu – Aplikační profil" src="../img/vytvorit_aplikacniprofil.png" /></p>
 <p>V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.</p>
 <ol>
@@ -115,7 +124,7 @@
 <li>
 <p>Vložte <strong>URL specifikaci</strong> modelu, ze kterého chcete aplikační profil vytvořit.<br />
    Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:<br />
-<a href="https://eosc-cz.github.io/CCMM/cs/">https://eosc-cz.github.io/CCMM/cs/</a></p>
+<a href="https://techlib.github.io/CCMM/cs/">CCMM/</a></p>
 </li>
 <li>
 <p>Vyplňte <strong>Base IRI</strong> – základní IRI (Internationalized Resource Identifier),<br />
@@ -123,13 +132,15 @@
 <a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
 </li>
 </ol>
-<blockquote>
-<p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.</p>
-</blockquote>
+<p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.
+Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
+<img alt="Slovniky" src="../img/slovniky.png" /></p>
+<p>Mohu si zobrazit co obsahuje zvolený slovník.
+<img alt="Zobrazeni" src="../img/zobrazenimodel.png" />
+<img alt="Vizuální model" src="../img/vizualni_model.png" /></p>
 <hr />
 <h2 id="definice-trid-zahrnutych-do-aplikacniho-profilu">▶️ Definice tříd zahrnutých do aplikačního profilu</h2>
 <p>Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.</p>
-<p>Záložka <em>profile</em> obsahuje všechny prvky použité ve výchozím metadatovém modelu.</p>
 <p>Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).<br />
 Klikneme na <strong>Create new profile</strong> (symbol podkovy).</p>
 <p>Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozím metadatovém modelu, nebo ji budeme upravovat.</p>
@@ -158,6 +169,12 @@ Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní ro
 <li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong></li>
 </ol>
 <p><img alt="Atribut" src="../img/atribut.png" /></p>
+<h2 id="pridani-vazeb-mezi-tridami">▶️ Přidání vazeb mezi třídami</h2>
+<p>Nyní si přidáme do svého profilu další třídu (funding reference).
+V části relationsh přidám vztah mezi těmito třídami (has funding reference).
+<img alt="Relationship" src="../img/relationship_profile.png" /></p>
+<h2 id="ciselnik">▶️ Číselník</h2>
+<p>Číselník se přidávají prostřednictvím SKOS. </p>
 <h2 id="nadefinovani-vlastnich-pojmu-ve-slovniku">▶️ Nadefinování vlastních pojmů ve Slovníku</h2></div>
             </div>
         </div>
