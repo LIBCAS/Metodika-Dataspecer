@@ -1,6 +1,5 @@
 ## Vytvoření nového aplikačního profilu
-Při vytváření aplikačního profilu převezmeme třídy ze zvoleného aplikačního profilu.
- Vlastní prvky které chceme přidat nadefinujeme ve slovníku.
+Při vytváření aplikačního profilu přebírám prvky z
 
 ![Výběr typu projektu – Aplikační profil](img/vytvorit_aplikacniprofil.png)
 
@@ -10,21 +9,32 @@ V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikač
 
 2. Vložte **URL specifikaci** modelu, ze kterého chcete aplikační profil vytvořit.  
    Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:  
-   [https://eosc-cz.github.io/CCMM/cs/](https://eosc-cz.github.io/CCMM/cs/)
+   [CCMM/](https://techlib.github.io/CCMM/cs/)
 
 3. Vyplňte **Base IRI** – základní IRI (Internationalized Resource Identifier),  
    pod kterým budou identifikovány prvky vašeho profilu:  
    [https://example.com/profile/mujprofil/](https://example.com/profile/mujprofil/)
 
-> **Poznámka:** Doporučujeme promyslet předem; lze jej však později upravit.
+**Poznámka:** Doporučujeme promyslet předem; lze jej však později upravit.
+Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
+![Slovniky](img/slovniky.png)
 
+Mohu si zobrazit co obsahuje zvolený slovník.
+![Zobrazeni](img/zobrazenimodel.png)
+![Vizuální model](img/vizualni_model.png)
 ---
 
 ## ▶️ Definice tříd zahrnutých do aplikačního profilu
 
 Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.
 
-Záložka *profile* obsahuje všechny prvky použité ve výchozím metadatovém modelu.
+
+
+
+
+
+
+
 
 Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).  
 Klikneme na **Create new profile** (symbol podkovy).
@@ -64,6 +74,14 @@ U tříd je následně třeba přidat atributy.
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
 
 ![Atribut](img/atribut.png)
+## ▶️ Přidání vazeb mezi třídami
+Nyní si přidáme do svého profilu další třídu (funding reference).
+V části relationsh přidám vztah mezi těmito třídami (has funding reference).
+![Relationship](img/relationship_profile.png)
+## ▶️ Číselník
+Číselník se přidávají prostřednictvím SKOS. 
+
+
 
 ## ▶️ Nadefinování vlastních pojmů ve Slovníku
 
