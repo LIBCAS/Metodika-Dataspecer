@@ -1,5 +1,9 @@
 ## Vytvoření nového aplikačního profilu
+<<<<<<< HEAD
 Při vytváření aplikačního profilu přebírám prvky z
+=======
+Při vytváření aplikačního profilu převezmeme třídy ze zvoleného aplikačního profilu. Vlastní prvky které chceme přidat nadefinujeme ve slovníku.
+>>>>>>> origin
 
 ![Výběr typu projektu – Aplikační profil](img/vytvorit_aplikacniprofil.png)
 
@@ -9,12 +13,17 @@ V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikač
 
 2. Vložte **URL specifikaci** modelu, ze kterého chcete aplikační profil vytvořit.  
    Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:  
+<<<<<<< HEAD
    [CCMM/](https://techlib.github.io/CCMM/cs/)
+=======
+   [https://eosc-cz.github.io/CCMM/cs/](https://eosc-cz.github.io/CCMM/cs/)
+>>>>>>> origin
 
 3. Vyplňte **Base IRI** – základní IRI (Internationalized Resource Identifier),  
    pod kterým budou identifikovány prvky vašeho profilu:  
    [https://example.com/profile/mujprofil/](https://example.com/profile/mujprofil/)
 
+<<<<<<< HEAD
 **Poznámka:** Doporučujeme promyslet předem; lze jej však později upravit.
 Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 ![Slovniky](img/slovniky.png)
@@ -22,12 +31,17 @@ Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatov
 Mohu si zobrazit co obsahuje zvolený slovník.
 ![Zobrazeni](img/zobrazenimodel.png)
 ![Vizuální model](img/vizualni_model.png)
+=======
+> **Poznámka:** Doporučujeme promyslet předem; lze jej však později upravit.
+
+>>>>>>> origin
 ---
 
 ## ▶️ Definice tříd zahrnutých do aplikačního profilu
 
 Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.
 
+<<<<<<< HEAD
 
 
 
@@ -35,6 +49,9 @@ Po vytvoření nového aplikačního profilu se nám otevře editor aplikačníh
 
 
 
+=======
+Záložka *profile* obsahuje všechny prvky použité ve výchozím metadatovém modelu.
+>>>>>>> origin
 
 Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).  
 Klikneme na **Create new profile** (symbol podkovy).
@@ -68,6 +85,7 @@ Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené 
 ![Zobrazení třídy](img/katalog_vizualni.png)
 
 ## ▶️ Přidání atributů
+<<<<<<< HEAD
 U tříd je následně třeba přidat atributy.
 1. Atribut přidám symbolem plus. Zvolím si například 
 
@@ -84,6 +102,15 @@ V části relationsh přidám vztah mezi těmito třídami (has funding referenc
 
 
 ## ▶️ Nadefinování vlastních pojmů ve Slovníku
+=======
+1. Atribut přidám symbolem plus.
+
+2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
+U tříd je následně třeba definovat atributy:
+![Atribut](img/atribut.png)
+
+
+>>>>>>> origin
 
 
 
