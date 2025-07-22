@@ -81,11 +81,7 @@
             
             <li class="nav-item" data-bs-level="1"><a href="#problematika-modelovani-dat" class="nav-link">Problematika modelování dat</a>
               <ul class="nav flex-column">
-            <li class="nav-item" data-bs-level="2"><a href="#zaklady-modelovani-dat" class="nav-link">Základy modelování dat</a>
-              <ul class="nav flex-column">
-              </ul>
-            </li>
-            <li class="nav-item" data-bs-level="2"><a href="#priklady-serializacnich-technologii-a-ruznych-schemat" class="nav-link">Příklady serializačních technologií a různých schémat</a>
+            <li class="nav-item" data-bs-level="2"><a href="#slovnik-pojmu" class="nav-link">Slovník pojmů</a>
               <ul class="nav flex-column">
               </ul>
             </li>
@@ -97,20 +93,23 @@
                     <div class="col-md-9" role="main">
 
 <h1 id="problematika-modelovani-dat">Problematika modelování dat</h1>
-<h2 id="zaklady-modelovani-dat">Základy modelování dat</h2>
-<p>Představme si velkou doručovací společnost, která pracuje se zákazníky a jejich objednávkami. Interně potřebuje společnost sledovat své pracovníky, sklady a vozidla, která zajišťují doručení zboží. I když se jedná o zjednodušený scénář, můžeme již vytvořit jednoduchý diagram popisující vztahy mezi zmíněnými entitami – tzv. doménovou ontologii.</p>
-<p>Vývojáři softwaru používají tento popis spolu s dalšími informacemi k vytvoření databází a interních systémů, které slouží k provozu společnosti, vytváření objednávek a distribuci zboží mezi různá doručovací vozidla.</p>
-<p>Obvykle se vytváří více menších systémů, jako například webová stránka pro zákazníky, systém pro pracovníky ve skladech, mobilní aplikace pro doručovatele atd. Aby tyto aplikace, weby a další systémy společnosti mohly mezi sebou sdílet informace, musí se obě strany dohodnout na společném formátu a technologii. Nejčastěji používané technologie pro výměnu dat jsou <strong>XML</strong>, <strong>JSON</strong>, <strong>RDF</strong> nebo <strong>CSV</strong>.</p>
-<p>Formát, nebo technicky řečeno <strong>schéma</strong>, specifikuje, jak by měla být data strukturována – popisuje názvy polí, datové typy, pořadí entit atd.</p>
-<hr />
-<h2 id="priklady-serializacnich-technologii-a-ruznych-schemat">Příklady serializačních technologií a různých schémat</h2>
-<h3 id="ukazkova-data-o-zakaznikovi-ve-formatu-json">Ukázková data o zákazníkovi ve formátu <strong>JSON</strong></h3>
-<p>```json
-{
-  "name": "John",
-  "surname": "Doe",
-  "age": 35
-}</p></div>
+<h2 id="slovnik-pojmu">Slovník pojmů</h2>
+<p>Obsahuje přehled základních pojmů používaných při datovém modelování v nástroji Dataspecer. </p>
+<h3 id="aplikacni-profil">▶️ Aplikační profil</h3>
+<p>Aplikační profil je schéma složené z metadatových prvků čerpaných z jednoho nebo více slovníků a zásad a pokynů týkajících se jejich použití, připravené pro konkrétní aplikaci. </p>
+<h3 id="atributattribute">▶️ Atribut(attribute)</h3>
+<p>Je vlastnost třídy ve slovníku.</p>
+<h3 id="international-resource-identifier-iri">▶️ International resource identifier (IRI)</h3>
+<p>Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od URI (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.</p>
+<p>IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.
+Př. https://data.město.cz/osoby/Jiří_Černý</p>
+<h3 id="slovnik">▶️ Slovník</h3>
+<p>Slovník je formální seznam pojmů (např. datových prvků, entit, atributů, kódových hodnot), které jsou definovány, popsány a standardizovány pro účely datového modelu.</p>
+<h3 id="trida-class">▶️ Třída (class)</h3>
+<p>Představuje kategorii věcí (např. Dataset, Osoba), o kterých metadata popisují informace.</p>
+<h3 id="vztah">▶️ Vztah</h3>
+<p>Popisuje vztahy mezi 2 třídami aplikačního profilu. 
+Př. Dataset has funding reference. </p></div>
             </div>
         </div>
 

@@ -93,13 +93,23 @@
               <ul class="nav flex-column">
               </ul>
             </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#pridani-vztahu-mezi-tridami" class="nav-link">▶️ Přidání vztahů mezi třídami</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nadefinovani-vlastnich-pojmu-ve-slovniku" class="nav-link">▶️ Nadefinování vlastních pojmů ve Slovníku</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
         </ul>
     </div>
 </div></div>
                     <div class="col-md-9" role="main">
 
 <h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
-<p>Při vytváření aplikačního profilu převezmeme třídy ze zvoleného aplikačního profilu. Vlastní prvky které chceme přidat nadefinujeme ve slovníku.</p>
+<p>Při vytváření aplikačního profilu převezmeme třídy ze zvoleného slovníku. Vlastní prvky které chceme přidat nadefinujeme ve slovníku.</p>
 <p><img alt="Výběr typu projektu – Aplikační profil" src="../img/vytvorit_aplikacniprofil.png" /></p>
 <p>V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.</p>
 <ol>
@@ -113,49 +123,58 @@
 </li>
 <li>
 <p>Vyplňte <strong>Base IRI</strong> – základní IRI (Internationalized Resource Identifier),<br />
-   pod kterým budou identifikovány prvky vašeho profilu:<br />
-<a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
+   pod kterým budou identifikovány prvky vašeho profilu:  </p>
 </li>
 </ol>
-<blockquote>
-<p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.</p>
-</blockquote>
-<hr />
+<p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.
+Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
+Mohu si zobrazit co obsahuje zvolený slovník.</p>
+<p><a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
+<p><img alt="Slovniky" src="../img/slovniky.png" /></p>
+<p><img alt="Zobrazeni" src="../img/zobrazenimodel.png" />
+<img alt="Vizuální model" src="../img/vizualni_model.png" /></p>
 <h2 id="definice-trid-zahrnutych-do-aplikacniho-profilu">▶️ Definice tříd zahrnutých do aplikačního profilu</h2>
 <p>Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.</p>
 <p>Záložka <em>profile</em> obsahuje všechny prvky použité ve výchozím metadatovém modelu.</p>
 <p>Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).<br />
 Klikneme na <strong>Create new profile</strong> (symbol podkovy).</p>
 <p>Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozím metadatovém modelu, nebo ji budeme upravovat.</p>
-<p><strong>Name:</strong><br />
-Pojmenování třídy.</p>
-<p><strong>IRI</strong> <em>(International Resource Identifier)</em><br />
-Identifikátor třídy.</p>
-<p><strong>Specialization:</strong><br />
-Zda se jedná o specializaci jiné třídy.</p>
-<p><strong>Definition:</strong><br />
-Stručný popis dané třídy. Možné uvést i v několika jazycích.<br />
-<strong>Příklad:</strong><br />
-<em>Agent: Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.</em></p>
-<p><strong>Usage note:</strong><br />
-Poznámka k použití dané třídy. Př. "V tomto profilu se dataset pooužívá pro XYZ."</p>
-<p><strong>External documentation:</strong><br />
-Odkaz na externí dokumentaci popisující danou třídu.</p>
-<p><strong>Role:</strong><br />
-Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.</p>
+<p><strong>Name:</strong> Pojmenování třídy.</p>
+<p><strong>IRI</strong> <em>(International Resource Identifier)</em> Identifikátor třídy.</p>
+<p><strong>Specialization:</strong> Zda se jedná o specializaci jiné třídy.</p>
+<p><strong>Definition:</strong> Stručný popis dané třídy. Možné uvést i v několika jazycích.<br />
+<strong>Příklad:</strong> Agent: Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.*</p>
+<p><strong>Usage note:</strong> Poznámka k použití dané třídy. Př. "V tomto profilu se dataset pooužívá pro XYZ."</p>
+<p><strong>External documentation:</strong> Odkaz na externí dokumentaci popisující danou třídu.</p>
+<p><strong>Role:</strong> Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.</p>
 <p>Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model.
 <img alt="Zobrazení třídy" src="../img/katalog_vizualni.png" /></p>
 <h2 id="pridani-atributu">▶️ Přidání atributů</h2>
+<p>&lt;&lt;&lt;&lt;&lt;&lt;&lt; HEAD
+U tříd je následně třeba přidat atributy.
+1. Atribut přidám symbolem plus. </p>
 <ol>
-<li>
-<p>Atribut přidám symbolem plus.</p>
-</li>
-<li>
-<p>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong>
-U tříd je následně třeba definovat atributy:
-<img alt="Atribut" src="../img/atribut.png" /></p>
-</li>
-</ol></div>
+<li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong></li>
+</ol>
+<p><img alt="Atribut" src="../img/atribut.png" /></p>
+<h2 id="pridani-vztahu-mezi-tridami">▶️ Přidání vztahů mezi třídami</h2>
+<p>Nyní si přidáme do svého profilu další třídu (funding reference).
+V části relationsh přidám vztah mezi těmito třídami (has funding reference).
+<img alt="Relationship" src="../img/relationship_profile.png" />
+=======
+1. Atribut přidám symbolem plus.</p>
+<ol>
+<li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong>
+U tříd je následně třeba definovat atributy:</li>
+</ol>
+<p><img alt="Atribut" src="../img/atribut.png" /></p>
+<h2 id="nadefinovani-vlastnich-pojmu-ve-slovniku">▶️ Nadefinování vlastních pojmů ve Slovníku</h2>
+<p>V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM, nadefinuji si je ve slovníku. </p>
+<p><img alt="Slovnik" src="../img/slovnik_novy.png" /></p>
+<p>Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url), případně si nadefinovat vlastní.</p>
+<p><img alt="Pridat" src="../img/add_vocabulary.png" /></p>
+<p>Vytvořím si nový slovník a přidám nový pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
+Následně se nadefinované pojmy přidám do aplikačního profilu.</p></div>
             </div>
         </div>
 
