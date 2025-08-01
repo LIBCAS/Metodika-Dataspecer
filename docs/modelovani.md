@@ -1,41 +1,26 @@
 # Problematika modelování dat
-<<<<<<< HEAD
+
 ## Slovník pojmů
+Obsahuje přehled základních pojmů používaných při datovém modelování v nástroji Dataspecer. 
 ###▶️ Aplikační profil
-Aplikační profil je
-###▶️ Atribut
-###▶️ Číselník
-###▶️ Datové schéma
-###▶️ IRI
+Aplikační profil je schéma složené z metadatových prvků čerpaných z jednoho nebo více slovníků a zásad a pokynů týkajících se jejich použití, připravené pro konkrétní aplikaci. 
+###▶️ Atribut(attribute) 
+Je vlastnost třídy ve slovníku.
+###▶️ International resource identifier (IRI)
+Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od URI (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.
+
+IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.
+Př. https://data.město.cz/osoby/Jiří_Černý
+
 ###▶️ Slovník
-###▶️ Vizuální model
+Slovník je formální seznam pojmů (např. datových prvků, entit, atributů, kódových hodnot), které jsou definovány, popsány a standardizovány pro účely datového modelu.
+
+###▶️ Třída (class)
+Představuje kategorii věcí (např. Dataset, Osoba), o kterých metadata popisují informace.
+
 ###▶️ Vztah
+Popisuje vztahy mezi 2 třídami aplikačního profilu. 
+Př. Dataset has funding reference. 
 
 
 
-
-=======
-
-## Základy modelování dat
-
-Představme si velkou doručovací společnost, která pracuje se zákazníky a jejich objednávkami. Interně potřebuje společnost sledovat své pracovníky, sklady a vozidla, která zajišťují doručení zboží. I když se jedná o zjednodušený scénář, můžeme již vytvořit jednoduchý diagram popisující vztahy mezi zmíněnými entitami – tzv. doménovou ontologii.
-
-Vývojáři softwaru používají tento popis spolu s dalšími informacemi k vytvoření databází a interních systémů, které slouží k provozu společnosti, vytváření objednávek a distribuci zboží mezi různá doručovací vozidla.
-
-Obvykle se vytváří více menších systémů, jako například webová stránka pro zákazníky, systém pro pracovníky ve skladech, mobilní aplikace pro doručovatele atd. Aby tyto aplikace, weby a další systémy společnosti mohly mezi sebou sdílet informace, musí se obě strany dohodnout na společném formátu a technologii. Nejčastěji používané technologie pro výměnu dat jsou **XML**, **JSON**, **RDF** nebo **CSV**.
-
-Formát, nebo technicky řečeno **schéma**, specifikuje, jak by měla být data strukturována – popisuje názvy polí, datové typy, pořadí entit atd.
-
----
-
-## Příklady serializačních technologií a různých schémat
-
-### Ukázková data o zákazníkovi ve formátu **JSON**
-
-```json
-{
-  "name": "John",
-  "surname": "Doe",
-  "age": 35
-}
->>>>>>> origin
