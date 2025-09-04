@@ -191,8 +191,16 @@ V části relationsh přidám vztah mezi těmito třídami (has funding referenc
 <img alt="Relationship" src="../img/relationship_profile.png" />
 1. Atribut přidám symbolem plus.</p>
 <ol>
-<li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong></li>
+<li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong>
+<strong>Cardinality</strong>
+Kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.</li>
 </ol>
+<p>Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.</p>
+<p>Kardinalita se často zapisuje ve formátu:</p>
+<p>0..1 – nejvýše jeden výskyt (nepovinný),</p>
+<p>1..1 – právě jeden výskyt (povinný),</p>
+<p>0..* – libovolný počet výskytů (včetně nuly),</p>
+<p>1..* – alespoň jeden výskyt.</p>
 <p><img alt="Atribut" src="../img/atribut.png" />
 <strong>Specializace</strong>
 * Dopsat jak to funguje.</p>

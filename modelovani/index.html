@@ -79,12 +79,8 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
-            <li class="nav-item" data-bs-level="1"><a href="#problematika-modelovani-dat" class="nav-link">Problematika modelování dat</a>
-              <ul class="nav flex-column">
             <li class="nav-item" data-bs-level="2"><a href="#slovnik-pojmu" class="nav-link">Slovník pojmů</a>
               <ul class="nav flex-column">
-              </ul>
-            </li>
               </ul>
             </li>
         </ul>
@@ -92,25 +88,32 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h1 id="problematika-modelovani-dat">Problematika modelování dat</h1>
 <h2 id="slovnik-pojmu">Slovník pojmů</h2>
 <p>Obsahuje přehled základních pojmů používaných při datovém modelování v nástroji Dataspecer. </p>
 <h3 id="aplikacni-profil">▶️ Aplikační profil</h3>
-<p>Aplikační profil je schéma složené z metadatových prvků čerpaných z jednoho nebo více slovníků a zásad a pokynů týkajících se jejich použití, připravené pro konkrétní aplikaci. </p>
+<p>V metadatovém modelování je aplikační profil (application profile) specializovaný soubor pravidel a specifikací, který upravuje používání existujících metadatových schémat nebo standardů pro konkrétní účel, doménu nebo organizaci. Nejedná se tedy o nový metadatový standard, ale o kombinaci a úpravu již existujících prvků tak, aby vyhovovaly specifickým potřebám.</p>
 <h3 id="atributattribute">▶️ Atribut(attribute)</h3>
-<p>Je vlastnost třídy ve slovníku.</p>
+<p>V datovém modelování představuje atribut konkrétní vlastnost třídy (entity), která popisuje určitý detail nebo aspekt její instance. Každý atribut má určený název, datový typ a může mít i další pravidla, jako je povinnost vyplnění nebo opakovatelnost. Například ve třídě Address (adresa) mohou být atributy jako full address (úplná adresa), post code (poštovní směrovací číslo), post name (název pošty), locator designator (číselné označení, např. číslo popisné), nebo locator name (název ulice). Atribut latitude (zeměpisná šířka) a longitude (zeměpisná délka) zase patří ke třídě Geometry a slouží k prostorovému určení adresy. Každý z těchto atributů zachycuje konkrétní informaci o adrese a společně tvoří strukturovaný popis dat, který lze jednoznačně interpretovat a strojově zpracovávat. Například konkrétní adresa může mít post code = „110 00“, locator name = „Národní“ a latitude = „50.087“ – každý z těchto údajů je hodnotou přiřazenou ke svému atributu.</p>
 <h3 id="international-resource-identifier-iri">▶️ International resource identifier (IRI)</h3>
-<p>Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od URI (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.</p>
-<p>IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.
+<p>Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od URI (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.
+IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.
 Př. https://data.město.cz/osoby/Jiří_Černý</p>
+<h3 id="kardinalita">▶️ Kardinalita</h3>
+<p>Kardinalita v datovém modelování určuje, kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.</p>
+<p>Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.</p>
+<p>Kardinalita se často zapisuje ve formátu:</p>
+<p>0..1 – nejvýše jeden výskyt (nepovinný),</p>
+<p>1..1 – právě jeden výskyt (povinný),</p>
+<p>0..* – libovolný počet výskytů (včetně nuly),</p>
+<p>1..* – alespoň jeden výskyt.</p>
 <h3 id="rdf">▶️ RDF</h3>
 <p>(Resource Description Framework) je standard pro reprezentaci dat, který slouží k popisu informací pomocí trojic ve tvaru subjekt–predikát–objekt. Každá trojice vyjadřuje jedno tvrzení o nějakém zdroji, přičemž všechny prvky mohou být jednoznačně identifikovány pomocí URI. RDF se často používá k propojování dat z různých zdrojů a tvoří základ sémantického webu. Například trojice <a href="http://example.org/JanNovak">http://example.org/JanNovak</a> <a href="http://schema.org/jobTitle">http://schema.org/jobTitle</a> "analytik" říká, že Jan Novák má pracovní pozici analytik. RDF se často zapisuje ve formátu TTL (Turtle). Například zápis ex:JanNovak schema:jobTitle "analytik" říká, že Jan Novák má pracovní pozici „analytik“. </p>
 <h3 id="semanticke-datove-specifikace">▶️ Sémantické datové specifikace</h3>
 <p>Sémantická datová specifikace je formální popis datové struktury, který kromě technické definice dat (např. typy, atributy, vztahy) zahrnuje také význam těchto dat v konkrétním doménovém kontextu. Cílem je zajistit jednoznačnou interpretaci a správné porozumění datům napříč různými systémy, organizacemi i uživateli. Taková specifikace často využívá standardy jako ontologie, datové slovníky nebo modely typu RDF/OWL, které umožňují propojení dat s jejich sémantikou a tím podporují interoperabilitu, validaci a automatizované zpracování.</p>
 <h3 id="slovnik">▶️ Slovník</h3>
-<p>Slovník je formální seznam pojmů (např. datových prvků, entit, atributů, kódových hodnot), které jsou definovány, popsány a standardizovány pro účely datového modelu.</p>
+<p>Slovník je kolekce formálně definovaných pojmů (např. tříd, atributů a vztahů), které slouží pro popis datových struktur a metadat. Slovník obsahuje konkrétní sémantické prvky, které lze znovu používat napříč různými datovými modely. Ve slovníku jsou pojmy jednoznačně identifikovány (např. URI) a často vycházejí z existujících standardů (např. DCAT, Dublin Core, DataCite, FOAF).</p>
 <h3 id="trida-class">▶️ Třída (class)</h3>
-<p>Představuje kategorii věcí (např. Dataset, Osoba), o kterých metadata popisují informace.</p>
+<p>Třída v datovém modelování označuje typ objektů, které sdílejí stejné vlastnosti a význam. Používá se k popisu kategorií dat, jako jsou např. osoby, adresy, dokumenty nebo distribuční soubory. Každý konkrétní objekt v datech je instancí nějaké třídy. Třídy mohou být hierarchicky uspořádány (např. podtřídy) a mohou mít přiřazené atributy a vztahy.</p>
 <h3 id="vztah">▶️ Vztah</h3>
 <p>Popisuje vztahy mezi 2 třídami aplikačního profilu. 
 Př. Dataset has funding reference. </p>
