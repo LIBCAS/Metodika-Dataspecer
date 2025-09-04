@@ -79,6 +79,11 @@
     <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
         <ul class="nav flex-column">
             
+            <li class="nav-item" data-bs-level="2"><a href="#co-si-ujasnit-pred-vytvorenim-metadatoveho-profilu-pro-repozitar" class="nav-link">Co si ujasnit před vytvořením metadatového profilu pro repozitář</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
             <li class="nav-item" data-bs-level="2"><a href="#vytvoreni-noveho-aplikacniho-profilu" class="nav-link">Vytvoření nového aplikačního profilu</a>
               <ul class="nav flex-column">
               </ul>
@@ -108,21 +113,22 @@
 </div></div>
                     <div class="col-md-9" role="main">
 
-<h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
 <p>Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě repozitáři).
 Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. <a href="https://eosc-cz.github.io/CCMM/cs/">Czech core metadata model</a></p>
+<h2 id="co-si-ujasnit-pred-vytvorenim-metadatoveho-profilu-pro-repozitar">Co si ujasnit před vytvořením metadatového profilu pro repozitář</h2>
 <ol>
 <li>
-<p>Zjistíme si jaké prvky výchozí metadatový model obsahuje.</p>
+<p>Co budeme popisovat. Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu?</p>
 </li>
 <li>
-<p>Rozmyslíme si co jaké prvky z výchozího metadového převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.)</p>
+<p>Rozmyslíme si co jaké prvky z výchozího metadového modelu převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.).</p>
 </li>
 <li>
-<p>V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, musíme si nadefinovat nové prvky ve slovníku. </p>
+<p>V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či dopstpné slovníky, musíme vložit slovník nový  (přes url v ttl formátu ) nebo s nadefinujeme slovník nový.</p>
 </li>
 </ol>
 <p><img alt="Výběr typu projektu – Aplikační profil" src="../img/vytvorit_aplikacniprofil.png" /></p>
+<h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
 <p>V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.</p>
 <ol>
 <li>
@@ -142,13 +148,17 @@ Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš r
 Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.</p>
 <p><a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
-<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. </p>
+<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. 
+** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. </p>
+<p>** Attributes (Atributy)** Vlastnosti tříd.</p>
+<p>** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
+<p>** Generalizations ** Obsahuje všechno předchozí. </p>
 <p>V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
 <img alt=" Vocabularies (Slovniky)" src="../img/slovniky.png" /> 
-** Classes (Třídy) **</p>
+<strong>Classes (Třídy)</strong></p>
 <p>** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. </p>
-<p>** Attributes (Atributy) ** Vlastnosti tříd.</p>
-<p>** Profiles (Profily) ** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
+<p>** Attributes (Atributy)** Vlastnosti tříd.</p>
+<p>** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
 <p>** Generalizations ** Obsahuje všechno předchozí. </p>
 <p><img alt="Zobrazeni" src="../img/zobrazenimodel.png" />
 <img alt="Vizuální model" src="../img/vizualni_model.png" /></p>
@@ -184,11 +194,12 @@ V části relationsh přidám vztah mezi těmito třídami (has funding referenc
 <li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong></li>
 </ol>
 <p><img alt="Atribut" src="../img/atribut.png" />
-<strong>Specializace</strong></p>
+<strong>Specializace</strong>
+* Dopsat jak to funguje.</p>
 <h2 id="nadefinovani-vlastnich-pojmu-ve-slovniku">▶️ Nadefinování vlastních pojmů ve Slovníku</h2>
 <p>V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM, nadefinuji si je ve slovníku. </p>
 <p><img alt="Slovnik" src="../img/slovnik_novy.png" /></p>
-<p>Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url), případně si nadefinovat vlastní.</p>
+<p>Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odakaz na slovník v ttl formátu),případně si nadefinovat vlastní.</p>
 <p><img alt="Pridat" src="../img/add_vocabulary.png" /></p>
 <p>Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
 Následně se nadefinované pojmy přidám do aplikačního profilu.</p>
