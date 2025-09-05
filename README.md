@@ -1,2 +1,2 @@
-# Metodika Dataspecer
-Metodika Dataspecer 
+# Metodika pro správu metadatových profilů
+Metodika pro správu metadatových profilů
