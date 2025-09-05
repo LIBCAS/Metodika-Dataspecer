@@ -1,8 +1,9 @@
 site_name: Metodika pro správu metadatových profilů
 nav:
   - Úvod: index.md
-  - Aplikační profil: profil.md
-  - Datové modelování: modelovani.md
+  - Slovníky a aplikační profily: profily.md
+  - Dataspecer: dataspecer.md
+  - Slovník pojmů: slovník-pojmů.md
 site_url: https://libcas.github.io/Metodika-Dataspecer/
 site_dir: site
 repo_url: https://github.com/LIBCAS/Metodika-Dataspecer
