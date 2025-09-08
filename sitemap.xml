@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://rudi1984.github.io/Dataspecer/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://libcas.github.io/Metodika-Dataspecer/</loc>
+         <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://rudi1984.github.io/Dataspecer/modelovani/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://libcas.github.io/Metodika-Dataspecer/dataspecer/</loc>
+         <lastmod>2025-09-08</lastmod>
     </url>
     <url>
-         <loc>https://rudi1984.github.io/Dataspecer/profil/</loc>
-         <lastmod>2025-09-05</lastmod>
+         <loc>https://libcas.github.io/Metodika-Dataspecer/profily/</loc>
+         <lastmod>2025-09-08</lastmod>
+    </url>
+    <url>
+         <loc>https://libcas.github.io/Metodika-Dataspecer/slovn%C3%ADk-pojm%C5%AF/</loc>
+         <lastmod>2025-09-08</lastmod>
     </url>
 </urlset>

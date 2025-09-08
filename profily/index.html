@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://rudi1984.github.io/Dataspecer/profil/">
+        <link rel="canonical" href="https://libcas.github.io/Metodika-Dataspecer/profily/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Aplikacni profil - Dokumentace Dataspecer</title>
+        <title>Slovníky a aplikační profily - Metodika pro správu metadatových profilů</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">Dokumentace Dataspecer</a>
+                <a class="navbar-brand" href="..">Metodika pro správu metadatových profilů</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -35,13 +35,16 @@
                         <!-- Main navigation -->
                         <ul class="nav navbar-nav">
                             <li class="nav-item">
-                                <a href=".." class="nav-link">Uvod</a>
+                                <a href=".." class="nav-link">Úvod</a>
                             </li>
                             <li class="nav-item">
-                                <a href="./" class="nav-link active" aria-current="page">Aplikacni profil</a>
+                                <a href="./" class="nav-link active" aria-current="page">Slovníky a aplikační profily</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../modelovani/" class="nav-link">Datove modelovani</a>
+                                <a href="../dataspecer/" class="nav-link">Dataspecer</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../slovn%C3%ADk-pojm%C5%AF/" class="nav-link">Slovník pojmů</a>
                             </li>
                         </ul>
 
@@ -57,9 +60,12 @@
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a rel="next" href="../modelovani/" class="nav-link">
+                                <a rel="next" href="../dataspecer/" class="nav-link">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="https://github.com/LIBCAS/Metodika-Dataspecer/tree/main/docs/profily.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -124,9 +130,10 @@ Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš r
 <p>Rozmyslíme si co jaké prvky z výchozího metadového modelu převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.).</p>
 </li>
 <li>
-<p>V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či dopstpné slovníky, musíme vložit slovník nový  (přes url v ttl formátu ) nebo s nadefinujeme slovník nový.</p>
+<p>V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či slovníky, musíme vložit slovník nový  (přes URL v TTL formátu ) nebo s nadefinujeme slovník nový.</p>
 </li>
 </ol>
+<p>Slovníky či aplikační profily, které budeme v Dataspeceru použít, musí být hostovány na webovém serveru  podporujícím techniku <a href="https://fetch.spec.whatwg.org/#http-cors-protocol">Cross origin resource sharing </a> (CORS). Případně je třeba je nakopírovat na web, který techniku CORS podporuje.</p>
 <p><img alt="Výběr typu projektu – Aplikační profil" src="../img/vytvorit_aplikacniprofil.png" /></p>
 <h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
 <p>V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.</p>
@@ -148,11 +155,7 @@ Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš r
 Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.</p>
 <p><a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
-<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. 
-** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. </p>
-<p>** Attributes (Atributy)** Vlastnosti tříd.</p>
-<p>** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
-<p>** Generalizations ** Obsahuje všechno předchozí. </p>
+<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. </p>
 <p>V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
 <img alt=" Vocabularies (Slovniky)" src="../img/slovniky.png" /> 
 <strong>Classes (Třídy)</strong></p>
