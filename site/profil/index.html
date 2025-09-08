@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        
+        <link rel="canonical" href="https://rudi1984.github.io/Dataspecer/profil/">
+        <link rel="shortcut icon" href="../img/favicon.ico">
+        <title>Aplikacni profil - Dokumentace Dataspecer</title>
+        <link href="../css/bootstrap.min.css" rel="stylesheet">
+        <link href="../css/fontawesome.min.css" rel="stylesheet">
+        <link href="../css/brands.min.css" rel="stylesheet">
+        <link href="../css/solid.min.css" rel="stylesheet">
+        <link href="../css/v4-font-face.min.css" rel="stylesheet">
+        <link href="../css/base.css" rel="stylesheet">
+        <link id="hljs-light" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" >
+        <link id="hljs-dark" rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github-dark.min.css" disabled>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script>hljs.highlightAll();</script> 
+    </head>
+
+    <body>
+        <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
+            <div class="container">
+                <a class="navbar-brand" href="..">Dokumentace Dataspecer</a>
+                <!-- Expander button -->
+                <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <!-- Expanded navigation -->
+                <div id="navbar-collapse" class="navbar-collapse collapse">
+                        <!-- Main navigation -->
+                        <ul class="nav navbar-nav">
+                            <li class="nav-item">
+                                <a href=".." class="nav-link">Uvod</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="./" class="nav-link active" aria-current="page">Aplikacni profil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="../modelovani/" class="nav-link">Datove modelovani</a>
+                            </li>
+                        </ul>
+
+                    <ul class="nav navbar-nav ms-md-auto">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#mkdocs_search_modal">
+                                <i class="fa fa-search"></i> Search
+                            </a>
+                        </li>
+                            <li class="nav-item">
+                                <a rel="prev" href=".." class="nav-link">
+                                    <i class="fa fa-arrow-left"></i> Previous
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a rel="next" href="../modelovani/" class="nav-link">
+                                    Next <i class="fa fa-arrow-right"></i>
+                                </a>
+                            </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                    <div class="col-md-3"><div class="navbar-expand-md bs-sidebar hidden-print affix" role="complementary">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggler collapsed" data-bs-toggle="collapse" data-bs-target="#toc-collapse" title="Table of Contents">
+            <span class="fa fa-angle-down"></span>
+        </button>
+    </div>
+
+    
+    <div id="toc-collapse" class="navbar-collapse collapse card bg-body-tertiary">
+        <ul class="nav flex-column">
+            
+            <li class="nav-item" data-bs-level="2"><a href="#co-si-ujasnit-pred-vytvorenim-metadatoveho-profilu-pro-repozitar" class="nav-link">Co si ujasnit před vytvořením metadatového profilu pro repozitář</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#vytvoreni-noveho-aplikacniho-profilu" class="nav-link">Vytvoření nového aplikačního profilu</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#definice-trid-zahrnutych-do-aplikacniho-profilu" class="nav-link">▶️ Definice tříd zahrnutých do aplikačního profilu</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#pridani-atributu" class="nav-link">▶️ Přidání atributů</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#pridani-vztahu-mezi-tridami" class="nav-link">▶️ Přidání vztahů mezi třídami</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+            
+            <li class="nav-item" data-bs-level="2"><a href="#nadefinovani-vlastnich-pojmu-ve-slovniku" class="nav-link">▶️ Nadefinování vlastních pojmů ve Slovníku</a>
+              <ul class="nav flex-column">
+              </ul>
+            </li>
+        </ul>
+    </div>
+</div></div>
+                    <div class="col-md-9" role="main">
+
+<p>Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě repozitáři).
+Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. <a href="https://eosc-cz.github.io/CCMM/cs/">Czech core metadata model</a></p>
+<h2 id="co-si-ujasnit-pred-vytvorenim-metadatoveho-profilu-pro-repozitar">Co si ujasnit před vytvořením metadatového profilu pro repozitář</h2>
+<ol>
+<li>
+<p>Co budeme popisovat. Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu?</p>
+</li>
+<li>
+<p>Rozmyslíme si co jaké prvky z výchozího metadového modelu převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.).</p>
+</li>
+<li>
+<p>V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či dopstpné slovníky, musíme vložit slovník nový  (přes url v ttl formátu ) nebo s nadefinujeme slovník nový.</p>
+</li>
+</ol>
+<p><img alt="Výběr typu projektu – Aplikační profil" src="../img/vytvorit_aplikacniprofil.png" /></p>
+<h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
+<p>V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.</p>
+<ol>
+<li>
+<p>Zadejte <strong>název projektu</strong> (např. „CCMM AP“).</p>
+</li>
+<li>
+<p>Vložte <strong>URL specifikaci</strong> modelu, ze kterého chcete aplikační profil vytvořit.<br />
+   Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:<br />
+<a href="https://eosc-cz.github.io/CCMM/cs/">https://eosc-cz.github.io/CCMM/cs/</a></p>
+</li>
+<li>
+<p>Vyplňte <strong>Base IRI</strong> – základní IRI (Internationalized Resource Identifier),<br />
+   pod kterým budou identifikovány prvky vašeho profilu:  </p>
+</li>
+</ol>
+<p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.
+Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
+Mohu si zobrazit co obsahuje zvolený slovník.</p>
+<p><a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
+<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. 
+** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. </p>
+<p>** Attributes (Atributy)** Vlastnosti tříd.</p>
+<p>** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
+<p>** Generalizations ** Obsahuje všechno předchozí. </p>
+<p>V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
+<img alt=" Vocabularies (Slovniky)" src="../img/slovniky.png" /> 
+<strong>Classes (Třídy)</strong></p>
+<p>** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. </p>
+<p>** Attributes (Atributy)** Vlastnosti tříd.</p>
+<p>** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
+<p>** Generalizations ** Obsahuje všechno předchozí. </p>
+<p><img alt="Zobrazeni" src="../img/zobrazenimodel.png" />
+<img alt="Vizuální model" src="../img/vizualni_model.png" /></p>
+<h2 id="definice-trid-zahrnutych-do-aplikacniho-profilu">▶️ Definice tříd zahrnutých do aplikačního profilu</h2>
+<p>Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.</p>
+<p>Záložka <em>profile</em> obsahuje všechny prvky použité ve výchozím metadatovém modelu.</p>
+<p>Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).<br />
+Klikneme na <strong>Create new profile</strong> (symbol podkovy).</p>
+<p>Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozím metadatovém modelu, nebo ji budeme upravovat.</p>
+<p><strong>Name:</strong> Pojmenování třídy.</p>
+<p><strong>IRI</strong> <em>(International Resource Identifier)</em> Identifikátor třídy.</p>
+<p><strong>Specialization:</strong> Zda se jedná o specializaci jiné třídy.</p>
+<p><strong>Definition:</strong> Stručný popis dané třídy. Možné uvést i v několika jazycích.<br />
+<strong>Příklad:</strong> Agent: Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.*</p>
+<p><strong>Usage note:</strong> Poznámka k použití dané třídy. Př. "V tomto profilu se dataset pooužívá pro XYZ."</p>
+<p><strong>External documentation:</strong> Odkaz na externí dokumentaci popisující danou třídu.</p>
+<p><strong>Role:</strong> Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.</p>
+<p>Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
+<img alt="Zobrazení třídy" src="../img/katalog_vizualni.png" /></p>
+<h2 id="pridani-atributu">▶️ Přidání atributů</h2>
+<p>U tříd je následně třeba přidat atributy.
+1. Atribut přidám symbolem plus. </p>
+<ol>
+<li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong></li>
+</ol>
+<p><img alt="Atribut" src="../img/atribut.png" /></p>
+<h2 id="pridani-vztahu-mezi-tridami">▶️ Přidání vztahů mezi třídami</h2>
+<p>Nyní si přidáme do svého profilu další třídu (funding reference).
+V části relationsh přidám vztah mezi těmito třídami (has funding reference).
+<img alt="Relationship" src="../img/relationship_profile.png" />
+1. Atribut přidám symbolem plus.</p>
+<ol>
+<li>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong>
+<strong>Cardinality</strong>
+Kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.</li>
+</ol>
+<p>Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.</p>
+<p>Kardinalita se často zapisuje ve formátu:</p>
+<p>0..1 – nejvýše jeden výskyt (nepovinný),</p>
+<p>1..1 – právě jeden výskyt (povinný),</p>
+<p>0..* – libovolný počet výskytů (včetně nuly),</p>
+<p>1..* – alespoň jeden výskyt.</p>
+<p><img alt="Atribut" src="../img/atribut.png" />
+<strong>Specializace</strong>
+* Dopsat jak to funguje.</p>
+<h2 id="nadefinovani-vlastnich-pojmu-ve-slovniku">▶️ Nadefinování vlastních pojmů ve Slovníku</h2>
+<p>V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM, nadefinuji si je ve slovníku. </p>
+<p><img alt="Slovnik" src="../img/slovnik_novy.png" /></p>
+<p>Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odakaz na slovník v ttl formátu),případně si nadefinovat vlastní.</p>
+<p><img alt="Pridat" src="../img/add_vocabulary.png" /></p>
+<p>Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
+Následně se nadefinované pojmy přidám do aplikačního profilu.</p>
+<p><img alt="Slovnik" src="../img/slovnik_class.png" /></p></div>
+            </div>
+        </div>
+
+        <footer class="col-md-12">
+            <hr>
+            <p>Documentation built with <a href="https://www.mkdocs.org/">MkDocs</a>.</p>
+        </footer>
+        <script src="../js/bootstrap.bundle.min.js"></script>
+        <script>
+            var base_url = "..",
+                shortcuts = {"help": 191, "next": 78, "previous": 80, "search": 83};
+        </script>
+        <script src="../js/base.js"></script>
+        <script src="../search/main.js"></script>
+
+        <div class="modal" id="mkdocs_search_modal" tabindex="-1" role="dialog" aria-labelledby="searchModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="searchModalLabel">Search</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>From here you can search these documents. Enter your search terms below.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="search" class="form-control" placeholder="Search..." id="mkdocs-search-query" title="Type search term here">
+                    </div>
+                </form>
+                <div id="mkdocs-search-results" data-no-results-text="No results found"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div><div class="modal" id="mkdocs_keyboard_modal" tabindex="-1" role="dialog" aria-labelledby="keyboardModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h4 class="modal-title" id="keyboardModalLabel">Keyboard Shortcuts</h4>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th style="width: 20%;">Keys</th>
+                    <th>Action</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td class="help shortcut"><kbd>?</kbd></td>
+                    <td>Open this help</td>
+                  </tr>
+                  <tr>
+                    <td class="next shortcut"><kbd>n</kbd></td>
+                    <td>Next page</td>
+                  </tr>
+                  <tr>
+                    <td class="prev shortcut"><kbd>p</kbd></td>
+                    <td>Previous page</td>
+                  </tr>
+                  <tr>
+                    <td class="search shortcut"><kbd>s</kbd></td>
+                    <td>Search</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <div class="modal-footer">
+            </div>
+        </div>
+    </div>
+</div>
+
+    </body>
+</html>

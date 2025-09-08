@@ -1,14 +1,21 @@
-## Vytvoření nového aplikačního profilu
-Než začneme v Dataseceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. [Czech core metadata model](https://eosc-cz.github.io/CCMM/cs/)
-1. Zjistíme si jaké prvky výchozí metadatový model obsahuje.
 
-2. Rozmyslíme si co jaké prvky z výchozího metadového převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.)
+Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě repozitáři).
+Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. [Czech core metadata model](https://eosc-cz.github.io/CCMM/cs/)
 
-3. V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, musíme si nadefinovat nové prvky ve slovníku. 
+
+## Co si ujasnit před vytvořením metadatového profilu pro repozitář
+1. Co budeme popisovat. Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu?
+
+2. Rozmyslíme si co jaké prvky z výchozího metadového modelu převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.).
+
+3. V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či slovníky, musíme vložit slovník nový  (přes URL v TTL formátu ) nebo s nadefinujeme slovník nový.
+
+Slovníky či aplikační profily, které budeme v Dataspeceru použít, musí být hostovány na webovém serveru  podporujícím techniku [Cross origin resource sharing ](https://fetch.spec.whatwg.org/#http-cors-protocol) (CORS). Případně je třeba je nakopírovat na web, který techniku CORS podporuje.
 
 
 ![Výběr typu projektu – Aplikační profil](img/vytvorit_aplikacniprofil.png)
 
+## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
 
 1. Zadejte **název projektu** (např. „CCMM AP“).
@@ -27,9 +34,19 @@ Mohu si zobrazit co obsahuje zvolený slovník.
 
    [https://example.com/profile/mujprofil/](https://example.com/profile/mujprofil/)
 
+V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. 
 
-![Slovniky](img/slovniky.png)
+V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
+![ Vocabularies (Slovniky)](img/slovniky.png) 
+**Classes (Třídy)**
 
+** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. 
+
+** Attributes (Atributy)** Vlastnosti tříd.
+
+** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. 
+
+** Generalizations ** Obsahuje všechno předchozí. 
 
 
 ![Zobrazeni](img/zobrazenimodel.png)
@@ -62,7 +79,7 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 **Role:** Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
-Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model.
+Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
 ![Zobrazení třídy](img/katalog_vizualni.png)
 
 ## ▶️ Přidání atributů
@@ -80,9 +97,25 @@ V části relationsh přidám vztah mezi těmito třídami (has funding referenc
 1. Atribut přidám symbolem plus.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
+**Cardinality**
+Kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.
 
+Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.
+
+Kardinalita se často zapisuje ve formátu:
+
+0..1 – nejvýše jeden výskyt (nepovinný),
+
+1..1 – právě jeden výskyt (povinný),
+
+0..* – libovolný počet výskytů (včetně nuly),
+
+1..* – alespoň jeden výskyt.
 
 ![Atribut](img/atribut.png)
+**Specializace**
+* Dopsat jak to funguje.
+
 
 ## ▶️ Nadefinování vlastních pojmů ve Slovníku
 
@@ -90,7 +123,7 @@ V případě, že chci do aplikačního profilu přidat vlastní prvky které ne
 
 ![Slovnik](img/slovnik_novy.png)
 
-Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url), případně si nadefinovat vlastní.
+Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odakaz na slovník v ttl formátu),případně si nadefinovat vlastní.
 
 ![Pridat](img/add_vocabulary.png)
 
@@ -98,6 +131,7 @@ Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplni
 Následně se nadefinované pojmy přidám do aplikačního profilu.
 
 ![Slovnik](img/slovnik_class.png)
+
 
 
 
