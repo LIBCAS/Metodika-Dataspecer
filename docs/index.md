@@ -1,11 +1,7 @@
 # Metodika pro správu metadatových profilů
-<<<<<<< HEAD
 Tento dokument je Metodikou pro správu metadatových profilů primárně pro účely projektu NRP - Národní repozitářová platforma.
 Slouží zejména správcům jednotlivých metadatových profilů repozitářů, pokud jim nestačí společný metadatový profil [CCMM](https://ccmm.cz).
 Popisuje, jak lze pro tvorbu a správu metadatových profilů využít k tomu vyvinutý nástroj [Dataspecer](https://dataspecer.com).
-=======
-Účelem této metodiky je seznámit uživatele se správou metadatových profilů v rámci NRP. Správa metadatových profilů probíhá prostřednictvím nástroje Dataspacer.
-
 Dataspecer je nástroj pro tvorbu, správu a vizualizaci sémantických datových specifikací,slovníků a aplikačních profilů až po odvozené technické artefakty, jako jsou datová schémata (XML, JSON, CSV), validační pravidla, API a aplikační prototypy.
 
 Aplikaci můžete vyzkoušet v [demo instanci](https://demo.dataspecer.com/)
@@ -48,4 +44,4 @@ Upravit šablonu dokumentace** Otevře se HTML editor kde mohu editovat vzhled �
 
 
 
->>>>>>> 07c5ee9 (Změna názvu metodiky (4), Oprava odkazu (3), zkratky (2),přidat zmínku o CORS)
+
