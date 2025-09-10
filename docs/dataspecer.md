@@ -1,4 +1,7 @@
 # Nástroj pro správu metadatových profilů: Dataspecer
+Dataspecer je nástroj pro tvorbu, správu a vizualizaci sémantických datových specifikací, tj. slovníků a aplikačních profilů.
+Na jejich základě je možné také odvozovat další technické artefakty, zejména datová schémata (XML, JSON, CSV).
+Aplikaci můžete vyzkoušet na [demo instanci](https://demo.dataspecer.com/).
 
 ## Základní rozhraní
 
