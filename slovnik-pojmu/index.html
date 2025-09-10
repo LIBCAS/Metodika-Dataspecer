@@ -6,9 +6,9 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         
         
-        <link rel="canonical" href="https://libcas.github.io/Metodika-Dataspecer/slovn%C3%ADk-pojm%C5%AF/">
+        <link rel="canonical" href="https://libcas.github.io/Metodika-Dataspecer/slovnik-pojmu/">
         <link rel="shortcut icon" href="../img/favicon.ico">
-        <title>Slovník pojmů - Metodika pro správu metadatových profilů</title>
+        <title>Slovník pojmů - Dokumentace Dataspecer</title>
         <link href="../css/bootstrap.min.css" rel="stylesheet">
         <link href="../css/fontawesome.min.css" rel="stylesheet">
         <link href="../css/brands.min.css" rel="stylesheet">
@@ -24,7 +24,7 @@
     <body>
         <div class="navbar fixed-top navbar-expand-lg navbar-dark bg-primary">
             <div class="container">
-                <a class="navbar-brand" href="..">Metodika pro správu metadatových profilů</a>
+                <a class="navbar-brand" href="..">Dokumentace Dataspecer</a>
                 <!-- Expander button -->
                 <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navbar-collapse" aria-controls="navbar-collapse" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
@@ -38,10 +38,10 @@
                                 <a href=".." class="nav-link">Úvod</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../profily/" class="nav-link">Slovníky a aplikační profily</a>
+                                <a href="../dataspecer/" class="nav-link">Dataspecer</a>
                             </li>
                             <li class="nav-item">
-                                <a href="../dataspecer/" class="nav-link">Dataspecer</a>
+                                <a href="../profily/" class="nav-link">Profily</a>
                             </li>
                             <li class="nav-item">
                                 <a href="./" class="nav-link active" aria-current="page">Slovník pojmů</a>
@@ -55,7 +55,7 @@
                             </a>
                         </li>
                             <li class="nav-item">
-                                <a rel="prev" href="../dataspecer/" class="nav-link">
+                                <a rel="prev" href="../profily/" class="nav-link">
                                     <i class="fa fa-arrow-left"></i> Previous
                                 </a>
                             </li>
@@ -63,9 +63,6 @@
                                 <a rel="next" class="nav-link disabled">
                                     Next <i class="fa fa-arrow-right"></i>
                                 </a>
-                            </li>
-                            <li class="nav-item">
-                                <a href="https://github.com/LIBCAS/Metodika-Dataspecer/tree/main/docs/slovník-pojmů.md" class="nav-link"><i class="fa-brands fa-github"></i> Edit on GitHub</a>
                             </li>
                     </ul>
                 </div>
@@ -104,6 +101,8 @@
 <p>Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od URI (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.
 IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.
 Př. https://data.město.cz/osoby/Jiří_Černý</p>
+<h3 id="cross-origin-resource-sharing-cors">▶️ Cross-Origin Resource Sharing (CORS)</h3>
+<p><strong>Cross-Origin Resource Sharing (CORS)</strong> je bezpečnostní mechanismus využívající HTTP hlavičky, který umožňuje webovým aplikacím přistupovat ke zdrojům (např. API nebo datovým sadám) na jiných doménách, než na kterých byly načteny. Standardně prohlížeče takové přeshraniční požadavky omezují kvůli ochraně uživatelských dat, ale pomocí CORS může server výslovně povolit přístup z jiných důvěryhodných domén. Tento mechanismus je důležitý zejména při zpřístupňování otevřených dat pro koncové uživatele nebo frontendové aplikace. Chování CORS je popsáno ve <a href="https://fetch.spec.whatwg.org/#http-cors-protocol">specifikaci Fetch Standard (WHATWG)</a> a praktické vysvětlení i příklady najdete na <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS">Mozilla Developer Network (MDN)</a>.</p>
 <h3 id="kardinalita">▶️ Kardinalita</h3>
 <p>Kardinalita v datovém modelování určuje, kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.</p>
 <p>Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.</p>
