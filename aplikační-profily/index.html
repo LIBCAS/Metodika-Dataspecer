@@ -11,10 +11,10 @@
         <link rel="canonical" href="https://libcas.github.io/Metodika-Dataspecer/aplika%C4%8Dn%C3%AD-profily/">
       
       
-        <link rel="prev" href="../dataspecer/">
+        <link rel="prev" href="../editor-modelu/">
       
       
-        <link rel="next" href="../slovn%C3%ADk-pojm%C5%AF/">
+        <link rel="next" href="../slovn%C3%ADky/">
       
       
       <link rel="icon" href="../assets/images/favicon.png">
@@ -283,6 +283,28 @@
       
   
   
+  
+  
+    <li class="md-nav__item">
+      <a href="../editor-modelu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Editor modelu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
     
   
   
@@ -376,19 +398,32 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#nadefinovani-vlastnich-pojmu-ve-slovniku" class="md-nav__link">
-    <span class="md-ellipsis">
-      ▶️ Nadefinování vlastních pojmů ve Slovníku
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slovn%C3%ADky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slovníky
+    
+  </span>
+  
+
+      </a>
     </li>
   
 
@@ -484,15 +519,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#nadefinovani-vlastnich-pojmu-ve-slovniku" class="md-nav__link">
-    <span class="md-ellipsis">
-      ▶️ Nadefinování vlastních pojmů ve Slovníku
-    </span>
-  </a>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -511,50 +537,43 @@
 
   <h1>Aplikační profily</h1>
 
-<p>Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě repozitáři).
-Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. <a href="https://eosc-cz.github.io/CCMM/cs/">Czech core metadata model</a></p>
+<p>Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě metadata doménového repozitáře).
+Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. <a href="https://techlib.github.io/CCMM/en/">Czech Core Metadata Model (CCMM)</a>.</p>
 <h2 id="co-si-ujasnit-pred-vytvorenim-metadatoveho-profilu-pro-repozitar">Co si ujasnit před vytvořením metadatového profilu pro repozitář</h2>
 <ol>
 <li>
-<p>Co budeme popisovat. Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu?</p>
+<p>Potřebujeme vlastní aplikační profil? Pokud CCMM pokrývá mé potřeby, žádný jiný aplikační profil nepotřebuji.</p>
 </li>
 <li>
-<p>Rozmyslíme si co jaké prvky z výchozího metadového modelu převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.).</p>
+<p>Co budeme popisovat? Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu, tj. RDF? Pokud ne, potřebujeme chybějící pojmy dodefinovat ve vlastním slovníku, který bude dále použit v novém aplikačním profilu.</p>
 </li>
 <li>
-<p>V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či slovníky, musíme vložit slovník nový  (přes URL v TTL formátu ) nebo s nadefinujeme slovník nový.</p>
+<p>Rozmyslíme si, jaké prvky z CCMM a dalších slovníků či profilů převezmeme, a jakým způsobem je budeme používat v našem profilu. Nastavíme pravidla, jak je budeme používat. Např. zda budou povinné, s jakou kardinalitou, apod. Přitom nesmíme porušit pravidla CCMM.</p>
 </li>
 </ol>
-<p>Slovníky či aplikační profily, které budeme v Dataspeceru použít, musí být hostovány na webovém serveru  podporujícím techniku <a href="https://fetch.spec.whatwg.org/#http-cors-protocol">Cross origin resource sharing </a> (CORS). Případně je třeba je nakopírovat na web, který techniku CORS podporuje.</p>
-<p><img alt="Výběr typu projektu – Aplikační profil" src="../assets/images/vytvorit_aplikacniprofil.png" /></p>
+<p>Slovníky či aplikační profily, které budeme chtít v Dataspeceru použít, musí být hostovány na webovém serveru podporujícím techniku <a href="https://fetch.spec.whatwg.org/#http-cors-protocol">Cross origin resource sharing (CORS)</a>.
+Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v naší moci podporu zajistit, můžeme daný soubor nakopírovat na web, který techniku CORS podporuje, např. <a href="https://pages.github.com">GitHub Pages</a>.</p>
 <h2 id="vytvoreni-noveho-aplikacniho-profilu">Vytvoření nového aplikačního profilu</h2>
 <p>V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.</p>
+<p><img alt="Nový projekt" src="../assets/images/nov%C3%BD_projekt.webp" />
+<img alt="Průvodce projektem" src="../assets/images/nov%C3%BD_ap.webp" /></p>
 <ol>
 <li>
-<p>Zadejte <strong>název projektu</strong> (např. „CCMM AP“).</p>
+<p>Zadejte <strong>název projektu</strong> (např. „CCMM AP pro doménu XY“).</p>
 </li>
 <li>
 <p>Vložte <strong>URL specifikaci</strong> modelu, ze kterého chcete aplikační profil vytvořit.<br />
    Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:<br />
-<a href="https://eosc-cz.github.io/CCMM/cs/">https://eosc-cz.github.io/CCMM/cs/</a></p>
+<a href="https://techlib.github.io/CCMM/en/">https://techlib.github.io/CCMM/en/</a></p>
 </li>
 <li>
 <p>Vyplňte <strong>Base IRI</strong> – základní IRI (Internationalized Resource Identifier),<br />
-   pod kterým budou identifikovány prvky vašeho profilu:  </p>
+   pod kterým budou identifikovány prvky vašeho profilu: <code>https://example.com/profile/mujprofil/</code></p>
 </li>
 </ol>
 <p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.
 Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.</p>
-<p><a href="https://example.com/profile/mujprofil/">https://example.com/profile/mujprofil/</a></p>
-<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. </p>
-<p>V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
-<img alt=" Vocabularies (Slovniky)" src="../assets/images/slovniky.png" /> 
-<strong>Classes (Třídy)</strong></p>
-<p>** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. </p>
-<p>** Attributes (Atributy)** Vlastnosti tříd.</p>
-<p>** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. </p>
-<p>** Generalizations ** Obsahuje všechno předchozí. </p>
 <p><img alt="Zobrazeni" src="../assets/images/zobrazenimodel.png" />
 <img alt="Vizuální model" src="../assets/images/vizualni_model.png" /></p>
 <h2 id="definice-trid-zahrnutych-do-aplikacniho-profilu">▶️ Definice tříd zahrnutých do aplikačního profilu</h2>
@@ -599,14 +618,6 @@ Kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma tří
 <p><img alt="Atribut" src="../assets/images/atribut.png" />
 <strong>Specializace</strong>
 * Dopsat jak to funguje.</p>
-<h2 id="nadefinovani-vlastnich-pojmu-ve-slovniku">▶️ Nadefinování vlastních pojmů ve Slovníku</h2>
-<p>V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM, nadefinuji si je ve slovníku. </p>
-<p><img alt="Slovnik" src="../assets/images/slovnik_novy.png" /></p>
-<p>Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odakaz na slovník v ttl formátu),případně si nadefinovat vlastní.</p>
-<p><img alt="Pridat" src="../assets/images/add_vocabulary.png" /></p>
-<p>Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
-Následně se nadefinované pojmy přidám do aplikačního profilu.</p>
-<p><img alt="Slovnik" src="../assets/images/slovnik_class.png" /></p>
 
 
 

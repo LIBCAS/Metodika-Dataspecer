@@ -11,7 +11,7 @@
         <link rel="canonical" href="https://libcas.github.io/Metodika-Dataspecer/slovn%C3%ADk-pojm%C5%AF/">
       
       
-        <link rel="prev" href="../aplika%C4%8Dn%C3%AD-profily/">
+        <link rel="prev" href="../slovn%C3%ADky/">
       
       
       
@@ -72,7 +72,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#aplikacni-profil" class="md-skip">
+        <a href="#slovnik-pojmu" class="md-skip">
           Přeskočit obsah
         </a>
       
@@ -284,12 +284,56 @@
   
   
     <li class="md-nav__item">
+      <a href="../editor-modelu/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Editor modelu
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../aplika%C4%8Dn%C3%AD-profily/" class="md-nav__link">
         
   
   
   <span class="md-ellipsis">
     Aplikační profily
+    
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../slovn%C3%ADky/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    Slovníky
     
   </span>
   
@@ -311,6 +355,8 @@
       
       <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
       
+      
+        
       
       
         <label class="md-nav__link md-nav__link--active" for="__toc">
@@ -344,6 +390,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -372,7 +420,7 @@
         <li class="md-nav__item">
   <a href="#international-resource-identifier-iri" class="md-nav__link">
     <span class="md-ellipsis">
-      International resource identifier (IRI)
+      International Resource Identifier (IRI)
     </span>
   </a>
   
@@ -466,6 +514,8 @@
   
   
   
+    
+  
   
     <label class="md-nav__title" for="__toc">
       <span class="md-nav__icon md-icon"></span>
@@ -494,7 +544,7 @@
         <li class="md-nav__item">
   <a href="#international-resource-identifier-iri" class="md-nav__link">
     <span class="md-ellipsis">
-      International resource identifier (IRI)
+      International Resource Identifier (IRI)
     </span>
   </a>
   
@@ -579,38 +629,56 @@
 
 
 
-  <h1>Slovník pojmů</h1>
-
+<h1 id="slovnik-pojmu">Slovník pojmů</h1>
 <p>Slovník pojmů obsahuje přehled základních pojmů používaných při datovém modelování v <a href="../dataspecer/">nástroji Dataspecer</a>.</p>
 <h2 id="aplikacni-profil">Aplikační profil</h2>
 <p>V metadatovém modelování je aplikační profil (application profile) specializovaný soubor pravidel a specifikací, který upravuje používání existujících metadatových schémat nebo standardů pro konkrétní účel, doménu nebo organizaci. Nejedná se tedy o nový metadatový standard, ale o kombinaci a úpravu již existujících prvků tak, aby vyhovovaly specifickým potřebám.</p>
 <h2 id="atribut-attribute">Atribut (attribute)</h2>
-<p>V datovém modelování představuje atribut konkrétní vlastnost třídy (entity), která popisuje určitý detail nebo aspekt její instance. Každý atribut má určený název, datový typ a může mít i další pravidla, jako je povinnost vyplnění nebo opakovatelnost. Například ve třídě Address (adresa) mohou být atributy jako full address (úplná adresa), post code (poštovní směrovací číslo), post name (název pošty), locator designator (číselné označení, např. číslo popisné), nebo locator name (název ulice). Atribut latitude (zeměpisná šířka) a longitude (zeměpisná délka) zase patří ke třídě Geometry a slouží k prostorovému určení adresy. Každý z těchto atributů zachycuje konkrétní informaci o adrese a společně tvoří strukturovaný popis dat, který lze jednoznačně interpretovat a strojově zpracovávat. Například konkrétní adresa může mít post code = „110 00“, locator name = „Národní“ a latitude = „50.087“ – každý z těchto údajů je hodnotou přiřazenou ke svému atributu.</p>
-<h2 id="international-resource-identifier-iri">International resource identifier (IRI)</h2>
-<p>Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od URI (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.
-IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.
-Př. <code>https://data.město.cz/osoby/Jiří_Černý</code></p>
+<p>V datovém modelování představuje atribut konkrétní vlastnost třídy (entity), která popisuje určitý detail nebo aspekt její instance. Každý atribut má určený název, datový typ a může mít i další pravidla, jako je povinnost vyplnění nebo opakovatelnost. Například ve třídě <code>Address</code> (adresa) mohou být atributy jako <code>full address</code> (úplná adresa), <code>post code</code> (poštovní směrovací číslo), <code>post name</code> (název pošty), <code>locator designator</code> (číselné označení, např. číslo popisné), nebo <code>locator name</code> (název ulice). Atribut <code>latitude</code> (zeměpisná šířka) a <code>longitude</code> (zeměpisná délka) zase patří ke třídě <code>Geometry</code> a slouží k prostorovému určení adresy. Každý z těchto atributů zachycuje konkrétní informaci o adrese a společně tvoří strukturovaný popis dat, který lze jednoznačně interpretovat a strojově zpracovávat. Například konkrétní adresa může mít:</p>
+<pre><code class="language-text">post code = &quot;110 00&quot;
+locator name = &quot;Národní&quot;
+latitude = &quot;50.087&quot;
+</code></pre>
+<p>Každý z těchto údajů je hodnotou přiřazenou ke svému atributu.</p>
+<h2 id="international-resource-identifier-iri">International Resource Identifier (IRI)</h2>
+<p>Jednoznačný identifikátor sloužící k označení zdrojů na webu, který na rozdíl od <code>URI</code> (Uniform Resource Identifier) umožňuje použití znaků z plné znakové sady Unicode – tedy i písmen s diakritikou, cyrilice, čínských znaků apod.
+IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a metadatových modelů, kde zajišťuje globálně unikátní a čitelnou identifikaci pojmů, tříd nebo instancí.</p>
+<p>Příklad:</p>
+<pre><code class="language-text">https://data.město.cz/osoby/Jiří_Černý
+</code></pre>
 <h2 id="cross-origin-resource-sharing-cors">Cross-Origin Resource Sharing (CORS)</h2>
-<p><strong>Cross-Origin Resource Sharing (CORS)</strong> je bezpečnostní mechanismus využívající HTTP hlavičky, který umožňuje webovým aplikacím přistupovat ke zdrojům (např. API nebo datovým sadám) na jiných doménách, než na kterých byly načteny. Standardně prohlížeče takové přeshraniční požadavky omezují kvůli ochraně uživatelských dat, ale pomocí CORS může server výslovně povolit přístup z jiných důvěryhodných domén. Tento mechanismus je důležitý zejména při zpřístupňování otevřených dat pro koncové uživatele nebo frontendové aplikace. Chování CORS je popsáno ve <a href="https://fetch.spec.whatwg.org/#http-cors-protocol">specifikaci Fetch Standard (WHATWG)</a> a praktické vysvětlení i příklady najdete na <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS">Mozilla Developer Network (MDN)</a>.</p>
+<p><strong>Cross-Origin Resource Sharing (CORS)</strong> je bezpečnostní mechanismus využívající HTTP hlavičky, který umožňuje webovým aplikacím přistupovat ke zdrojům (např. API nebo datovým sadám) na jiných doménách, než na kterých byly načteny. Standardně prohlížeče takové přeshraniční požadavky omezují kvůli ochraně uživatelských dat, ale pomocí CORS může server výslovně povolit přístup z jiných důvěryhodných domén. Tento mechanismus je důležitý zejména při zpřístupňování otevřených dat pro koncové uživatele nebo frontendové aplikace.</p>
+<p>Chování CORS je popsáno ve <a href="https://fetch.spec.whatwg.org/#http-cors-protocol">specifikaci Fetch Standard (WHATWG)</a> a praktické vysvětlení i příklady najdete na <a href="https://developer.mozilla.org/en-US/docs/Web/HTTP/Guides/CORS">Mozilla Developer Network (MDN)</a>.</p>
 <h2 id="kardinalita">Kardinalita</h2>
 <p>Kardinalita v datovém modelování určuje, kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.</p>
-<p>Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.</p>
+<p>Například pokud má datová sada (<code>Dataset</code>) vlastnost <code>title</code>, kardinalita <code>1..1</code> znamená, že musí mít právě jeden název. Pokud by byla kardinalita <code>0..*</code>, může mít žádný, jeden nebo více názvů.</p>
 <p>Kardinalita se často zapisuje ve formátu:</p>
-<p>0..1 – nejvýše jeden výskyt (nepovinný),</p>
-<p>1..1 – právě jeden výskyt (povinný),</p>
-<p>0..* – libovolný počet výskytů (včetně nuly),</p>
-<p>1..* – alespoň jeden výskyt.</p>
+<pre><code class="language-text">0..1 – nejvýše jeden výskyt (nepovinný)
+1..1 – právě jeden výskyt (povinný)
+0..* – libovolný počet výskytů (včetně nuly)
+1..* – alespoň jeden výskyt
+</code></pre>
 <h2 id="rdf">RDF</h2>
-<p>(Resource Description Framework) je standard pro reprezentaci dat, který slouží k popisu informací pomocí trojic ve tvaru subjekt–predikát–objekt. Každá trojice vyjadřuje jedno tvrzení o nějakém zdroji, přičemž všechny prvky mohou být jednoznačně identifikovány pomocí URI. RDF se často používá k propojování dat z různých zdrojů a tvoří základ sémantického webu. Například trojice <a href="http://example.org/JanNovak">http://example.org/JanNovak</a> <a href="http://schema.org/jobTitle">http://schema.org/jobTitle</a> "analytik" říká, že Jan Novák má pracovní pozici analytik. RDF se často zapisuje ve formátu TTL (Turtle). Například zápis ex:JanNovak schema:jobTitle "analytik" říká, že Jan Novák má pracovní pozici „analytik“. </p>
+<p>(Resource Description Framework) je standard pro reprezentaci dat, který slouží k popisu informací pomocí trojic ve tvaru subjekt–predikát–objekt. Každá trojice vyjadřuje jedno tvrzení o nějakém zdroji, přičemž všechny prvky mohou být jednoznačně identifikovány pomocí URI. RDF se často používá k propojování dat z různých zdrojů a tvoří základ sémantického webu.</p>
+<p>Příklad trojice:</p>
+<pre><code class="language-text">&lt;http://example.org/JanNovak&gt; &lt;http://schema.org/jobTitle&gt; &quot;analytik&quot;
+</code></pre>
+<p>říká, že Jan Novák má pracovní pozici analytik.</p>
+<p>RDF se často zapisuje ve formátu TTL (Turtle). Například zápis:</p>
+<pre><code class="language-turtle">ex:JanNovak schema:jobTitle &quot;analytik&quot;
+</code></pre>
+<p>říká, že Jan Novák má pracovní pozici „analytik".</p>
 <h2 id="semanticke-datove-specifikace">Sémantické datové specifikace</h2>
-<p>Sémantická datová specifikace je formální popis datové struktury, který kromě technické definice dat (např. typy, atributy, vztahy) zahrnuje také význam těchto dat v konkrétním doménovém kontextu. Cílem je zajistit jednoznačnou interpretaci a správné porozumění datům napříč různými systémy, organizacemi i uživateli. Taková specifikace často využívá standardy jako ontologie, datové slovníky nebo modely typu RDF/OWL, které umožňují propojení dat s jejich sémantikou a tím podporují interoperabilitu, validaci a automatizované zpracování.</p>
+<p>Sémantická datová specifikace je formální popis datové struktury, který kromě technické definice dat (např. typy, atributy, vztahy) zahrnuje také význam těchto dat v konkrétním doménovém kontextu. Cílem je zajistit jednoznačnou interpretaci a správné porozumění datům napříč různými systémy, organizacemi i uživateli. Taková specifikace často využívá standardy jako ontologie, datové slovníky nebo modely typu <code>RDF</code>/<code>OWL</code>, které umožňují propojení dat s jejich sémantikou a tím podporují interoperabilitu, validaci a automatizované zpracování.</p>
 <h2 id="slovnik">Slovník</h2>
-<p>Slovník je kolekce formálně definovaných pojmů (např. tříd, atributů a vztahů), které slouží pro popis datových struktur a metadat. Slovník obsahuje konkrétní sémantické prvky, které lze znovu používat napříč různými datovými modely. Ve slovníku jsou pojmy jednoznačně identifikovány (např. URI) a často vycházejí z existujících standardů (např. DCAT, Dublin Core, DataCite, FOAF).</p>
+<p>Slovník je kolekce formálně definovaných pojmů (např. tříd, atributů a vztahů), které slouží pro popis datových struktur a metadat. Slovník obsahuje konkrétní sémantické prvky, které lze znovu používat napříč různými datovými modely. Ve slovníku jsou pojmy jednoznačně identifikovány (např. URI) a často vycházejí z existujících standardů (např. <code>DCAT</code>, <code>Dublin Core</code>, <code>DataCite</code>, <code>FOAF</code>).</p>
 <h2 id="trida-class">Třída (class)</h2>
-<p>Třída v datovém modelování označuje typ objektů, které sdílejí stejné vlastnosti a význam. Používá se k popisu kategorií dat, jako jsou např. osoby, adresy, dokumenty nebo distribuční soubory. Každý konkrétní objekt v datech je instancí nějaké třídy. Třídy mohou být hierarchicky uspořádány (např. podtřídy) a mohou mít přiřazené atributy a vztahy.</p>
+<p>Třída v datovém modelování označuje typ objektů, které sdílejí stejné vlastnosti a význam. Používá se k popisu kategorií dat, jako jsou např. <code>osoby</code>, <code>adresy</code>, <code>dokumenty</code> nebo <code>distribuční soubory</code>. Každý konkrétní objekt v datech je instancí nějaké třídy. Třídy mohou být hierarchicky uspořádány (např. podtřídy) a mohou mít přiřazené atributy a vztahy.</p>
 <h2 id="vztah">Vztah</h2>
-<p>Popisuje vztahy mezi 2 třídami aplikačního profilu. 
-Př. Dataset has funding reference. </p>
+<p>Popisuje vztahy mezi dvěma třídami aplikačního profilu.</p>
+<p>Příklad:</p>
+<pre><code class="language-text">Dataset has funding reference
+</code></pre>
 
 
 
