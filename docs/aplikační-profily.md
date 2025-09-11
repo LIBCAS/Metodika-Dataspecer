@@ -13,7 +13,7 @@ Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš r
 Slovníky či aplikační profily, které budeme v Dataspeceru použít, musí být hostovány na webovém serveru  podporujícím techniku [Cross origin resource sharing ](https://fetch.spec.whatwg.org/#http-cors-protocol) (CORS). Případně je třeba je nakopírovat na web, který techniku CORS podporuje.
 
 
-![Výběr typu projektu – Aplikační profil](img/vytvorit_aplikacniprofil.png)
+![Výběr typu projektu – Aplikační profil](assets/images/vytvorit_aplikacniprofil.png)
 
 ## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
@@ -37,7 +37,7 @@ Mohu si zobrazit co obsahuje zvolený slovník.
 V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. 
 
 V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
-![ Vocabularies (Slovniky)](img/slovniky.png) 
+![ Vocabularies (Slovniky)](assets/images/slovniky.png) 
 **Classes (Třídy)**
 
 ** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. 
@@ -49,8 +49,8 @@ V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je t
 ** Generalizations ** Obsahuje všechno předchozí. 
 
 
-![Zobrazeni](img/zobrazenimodel.png)
-![Vizuální model](img/vizualni_model.png)
+![Zobrazeni](assets/images/zobrazenimodel.png)
+![Vizuální model](assets/images/vizualni_model.png)
 
 
 ## ▶️ Definice tříd zahrnutých do aplikačního profilu
@@ -80,7 +80,7 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 **Role:** Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
 Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
-![Zobrazení třídy](img/katalog_vizualni.png)
+![Zobrazení třídy](assets/images/katalog_vizualni.png)
 
 ## ▶️ Přidání atributů
 U tříd je následně třeba přidat atributy.
@@ -88,12 +88,12 @@ U tříd je následně třeba přidat atributy.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
 
-![Atribut](img/atribut.png)
+![Atribut](assets/images/atribut.png)
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
 V části relationsh přidám vztah mezi těmito třídami (has funding reference).
-![Relationship](img/relationship_profile.png)
+![Relationship](assets/images/relationship_profile.png)
 1. Atribut přidám symbolem plus.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
@@ -112,7 +112,7 @@ Kardinalita se často zapisuje ve formátu:
 
 1..* – alespoň jeden výskyt.
 
-![Atribut](img/atribut.png)
+![Atribut](assets/images/atribut.png)
 **Specializace**
 * Dopsat jak to funguje.
 
@@ -121,16 +121,16 @@ Kardinalita se často zapisuje ve formátu:
 
 V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM, nadefinuji si je ve slovníku. 
 
-![Slovnik](img/slovnik_novy.png)
+![Slovnik](assets/images/slovnik_novy.png)
 
 Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odakaz na slovník v ttl formátu),případně si nadefinovat vlastní.
 
-![Pridat](img/add_vocabulary.png)
+![Pridat](assets/images/add_vocabulary.png)
 
 Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
 Následně se nadefinované pojmy přidám do aplikačního profilu.
 
-![Slovnik](img/slovnik_class.png)
+![Slovnik](assets/images/slovnik_class.png)
 
 
 
