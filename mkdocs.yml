@@ -1,4 +1,4 @@
-site_name: Dokumentace Dataspecer
+site_name: Metodika pro správu metadatových profilů
 nav:
   - Úvod: index.md
   - Dataspecer: dataspecer.md
