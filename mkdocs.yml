@@ -2,12 +2,7 @@ site_name: Dokumentace Dataspecer
 nav:
   - Úvod: index.md
   - Dataspecer: dataspecer.md
-  - Profily: profily.md
-  - Slovník pojmů: slovnik-pojmu.md
+  - Aplikační profily: aplikační-profily.md
+  - Slovník pojmů: slovník-pojmů.md
 site_url: https://libcas.github.io/Metodika-Dataspecer/
 site_dir: site
-
-    
-
-   
-  
