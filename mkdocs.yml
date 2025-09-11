@@ -8,6 +8,7 @@ site_url: https://libcas.github.io/Metodika-Dataspecer/
 site_dir: site
 theme:
   name: material
+  language: cs
   palette:
     # Palette toggle for automatic mode
     - media: "(prefers-color-scheme)"
@@ -32,3 +33,4 @@ extra:
   social:
     - icon: fontawesome/brands/github
       link: https://github.com/libcas/Metodika-Dataspecer
+  generator: false
