@@ -6,3 +6,9 @@ nav:
   - Slovník pojmů: slovník-pojmů.md
 site_url: https://libcas.github.io/Metodika-Dataspecer/
 site_dir: site
+theme:
+  name: material
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/libcas/Metodika-Dataspecer
