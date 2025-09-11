@@ -35,13 +35,13 @@ Dokumentace je připravena k publikaci na webu, např. na [GitHub Pages](https:/
 
 ## Nová specifikace
 Pro vytvoření nové specifikace klikneme na tlačítko Průvodce projektem.
-![Správce projektů](assets/images/nový_projekt.webp)
+![Nový projekt](assets/images/nový_projekt.webp)
 
 A zvolíme jednu z možností:
-![Novy projekt](assets/images/průvodce_projektem.webp)
+![Průvodce projektem](assets/images/průvodce_projektem.webp)
 
-**Slovník** Slovník vytváříme v případě, že potřebujeme definovat nové pojmy - třídy a vlastnosti.
+[**Slovník**](slovníky.md) vytváříme v případě, že potřebujeme definovat nové pojmy - třídy a vlastnosti.
 
-**Aplikační profil** Vytváříme, pokud chceme specifikovat použití částí jiných specifikací v našem konkrétním kontextu. Například pokud vytváříme aplikační profil CCMM pro konkrétní doménový repozitář.
+[**Aplikační profil**](aplikační-profily.md) vytváříme, pokud chceme specifikovat použití částí jiných specifikací v našem konkrétním kontextu. Například pokud vytváříme aplikační profil CCMM pro konkrétní doménový repozitář.
 
 **Datové schéma** slouží pro tvrobu datových struktur přímo na základě existujících slovníků. Tuto volbu nebudeme používat.

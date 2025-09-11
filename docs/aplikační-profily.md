@@ -1,52 +1,36 @@
 
-Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě repozitáři).
-Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. [Czech core metadata model](https://eosc-cz.github.io/CCMM/cs/)
+Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě metadata doménového repozitáře).
+Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. [Czech Core Metadata Model (CCMM)](https://techlib.github.io/CCMM/en/).
 
 
 ## Co si ujasnit před vytvořením metadatového profilu pro repozitář
-1. Co budeme popisovat. Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu?
+1. Potřebujeme vlastní aplikační profil? Pokud CCMM pokrývá mé potřeby, žádný jiný aplikační profil nepotřebuji.
 
-2. Rozmyslíme si co jaké prvky z výchozího metadového modelu převezmeme a jakým způsobem je budeme používat, upravovat, Nastavíme pravidla jak je budeme používat (zda budou povinné v metadatovém popisu, kardinalitu apod.).
+2. Co budeme popisovat? Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu, tj. RDF? Pokud ne, potřebujeme chybějící pojmy dodefinovat ve vlastním slovníku, který bude dále použit v novém aplikačním profilu.
 
-3. V případě, že potřebujeme podrobnější metadatový popis než umožňuje si výchozí metadatový model, či slovníky, musíme vložit slovník nový  (přes URL v TTL formátu ) nebo s nadefinujeme slovník nový.
+3. Rozmyslíme si, jaké prvky z CCMM a dalších slovníků či profilů převezmeme, a jakým způsobem je budeme používat v našem profilu. Nastavíme pravidla, jak je budeme používat. Např. zda budou povinné, s jakou kardinalitou, apod. Přitom nesmíme porušit pravidla CCMM.
 
-Slovníky či aplikační profily, které budeme v Dataspeceru použít, musí být hostovány na webovém serveru  podporujícím techniku [Cross origin resource sharing ](https://fetch.spec.whatwg.org/#http-cors-protocol) (CORS). Případně je třeba je nakopírovat na web, který techniku CORS podporuje.
-
-
-![Výběr typu projektu – Aplikační profil](assets/images/vytvorit_aplikacniprofil.png)
+Slovníky či aplikační profily, které budeme chtít v Dataspeceru použít, musí být hostovány na webovém serveru podporujícím techniku [Cross origin resource sharing (CORS)](https://fetch.spec.whatwg.org/#http-cors-protocol).
+Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v naší moci podporu zajistit, můžeme daný soubor nakopírovat na web, který techniku CORS podporuje, např. [GitHub Pages](https://pages.github.com).
 
 ## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
 
-1. Zadejte **název projektu** (např. „CCMM AP“).
+![Nový projekt](assets/images/nový_projekt.webp)
+![Průvodce projektem](assets/images/nový_ap.webp)
+
+1. Zadejte **název projektu** (např. „CCMM AP pro doménu XY“).
 
 2. Vložte **URL specifikaci** modelu, ze kterého chcete aplikační profil vytvořit.  
    Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:  
-   [https://eosc-cz.github.io/CCMM/cs/](https://eosc-cz.github.io/CCMM/cs/)
-
+   [https://techlib.github.io/CCMM/en/](https://techlib.github.io/CCMM/en/)
 
 3. Vyplňte **Base IRI** – základní IRI (Internationalized Resource Identifier),  
-   pod kterým budou identifikovány prvky vašeho profilu:  
+   pod kterým budou identifikovány prvky vašeho profilu: `https://example.com/profile/mujprofil/`
 
    **Poznámka:** Doporučujeme promyslet předem; lze jej však později upravit.
 Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.
-
-   [https://example.com/profile/mujprofil/](https://example.com/profile/mujprofil/)
-
-V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. 
-
-V horním rozhraní mám možnnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat. V Dataspeceru není automatické ukládání.
-![ Vocabularies (Slovniky)](assets/images/slovniky.png) 
-**Classes (Třídy)**
-
-** Relationships(Vztahy)** Vztahy mezi jednotlivými třídami. 
-
-** Attributes (Atributy)** Vlastnosti tříd.
-
-** Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného aplikačnního profilu. 
-
-** Generalizations ** Obsahuje všechno předchozí. 
 
 
 ![Zobrazeni](assets/images/zobrazenimodel.png)
@@ -115,26 +99,3 @@ Kardinalita se často zapisuje ve formátu:
 ![Atribut](assets/images/atribut.png)
 **Specializace**
 * Dopsat jak to funguje.
-
-
-## ▶️ Nadefinování vlastních pojmů ve Slovníku
-
-V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM, nadefinuji si je ve slovníku. 
-
-![Slovnik](assets/images/slovnik_novy.png)
-
-Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odakaz na slovník v ttl formátu),případně si nadefinovat vlastní.
-
-![Pridat](assets/images/add_vocabulary.png)
-
-Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
-Následně se nadefinované pojmy přidám do aplikačního profilu.
-
-![Slovnik](assets/images/slovnik_class.png)
-
-
-
-
-
-
-
