@@ -37,7 +37,7 @@ Mohu si zobrazit co obsahuje zvolený slovník.
 ![Vizuální model](assets/images/vizualni_model.png)
 
 
-## ▶️ Definice tříd zahrnutých do aplikačního profilu
+## ▶️ Výběr tříd zahrnutých do aplikačního profilu
 
 Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.
 
@@ -61,7 +61,7 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 **External documentation:** Odkaz na externí dokumentaci popisující danou třídu.
 
-**Role:** Určím se zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
+**Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
 Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
 ![Zobrazení třídy](assets/images/katalog_vizualni.png)
@@ -70,19 +70,19 @@ Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené 
 U tříd je následně třeba přidat atributy.
 1. Atribut přidám symbolem plus. 
 
-2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
+2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
 
 ![Atribut](assets/images/atribut.png)
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
-V části relationsh přidám vztah mezi těmito třídami (has funding reference).
+V části relationship přidám vztah mezi těmito třídami (has funding reference).
 ![Relationship](assets/images/relationship_profile.png)
 1. Atribut přidám symbolem plus.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
 **Cardinality**
-Kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.
+Určuje kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.
 
 Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.
 
@@ -96,6 +96,5 @@ Kardinalita se často zapisuje ve formátu:
 
 1..* – alespoň jeden výskyt.
 
-![Atribut](assets/images/atribut.png)
-**Specializace**
-* Dopsat jak to funguje.
+
+
