@@ -60,6 +60,7 @@ ex:JanNovak schema:jobTitle "analytik"
 
 ## Sémantické datové specifikace
 Sémantická datová specifikace je formální popis datové struktury, který kromě technické definice dat (např. typy, atributy, vztahy) zahrnuje také význam těchto dat v konkrétním doménovém kontextu. Cílem je zajistit jednoznačnou interpretaci a správné porozumění datům napříč různými systémy, organizacemi i uživateli. Taková specifikace často využívá standardy jako ontologie, datové slovníky nebo modely typu `RDF`/`OWL`, které umožňují propojení dat s jejich sémantikou a tím podporují interoperabilitu, validaci a automatizované zpracování.
+## Specializace
 
 ## Slovník
 Slovník je kolekce formálně definovaných pojmů (např. tříd, atributů a vztahů), které slouží pro popis datových struktur a metadat. Slovník obsahuje konkrétní sémantické prvky, které lze znovu používat napříč různými datovými modely. Ve slovníku jsou pojmy jednoznačně identifikovány (např. URI) a často vycházejí z existujících standardů (např. `DCAT`, `Dublin Core`, `DataCite`, `FOAF`).
