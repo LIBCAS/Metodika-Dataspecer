@@ -1,7 +1,7 @@
 # Metodika pro správu metadatových profilů
 Metodika pro správu metadatových profilů.
 
-Tvořena je v nástroji [MkDocs](https://www.mkdocs.org/) s pluginem [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material/).
+Tvořena je v nástroji [MkDocs](https://www.mkdocs.org/) s pluginy [`mkdocs-material`](https://squidfunk.github.io/mkdocs-material/) a [`mkdocs-static-i18n`](https://github.com/ultrabug/mkdocs-static-i18n).
 
 Pro lokální vvývoj je tedy třeba:
 1. Mít nainstalovaný Python alespoň 3.11, `pip` a `venv`.
@@ -11,6 +11,7 @@ Pro lokální vvývoj je tedy třeba:
 5. Aktivovat virtuální prostředí `source .venv/bin/activate`
 6. Nainstalovat MkDocs: `pip install mkdocs`
 7. Nainstalovat `mkdocs-material`: `pip install mkdocs-material`
+8. Nainstalovat `mkdocs-static-i18n`: `pip install mkdocs-static-i18n`
 
 # Acknowledgments
 

@@ -16,8 +16,8 @@ Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v na
 ## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
 
-![Nový projekt](assets/images/nový_projekt.webp)
-![Průvodce projektem](assets/images/nový_ap.webp)
+![Nový projekt](../assets/images/nový_projekt.webp)
+![Průvodce projektem](../assets/images/nový_ap.webp)
 
 1. Zadejte **název projektu** (např. „CCMM AP pro doménu XY“).
 
@@ -33,8 +33,8 @@ Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatov
 Mohu si zobrazit co obsahuje zvolený slovník.
 
 
-![Zobrazeni](assets/images/zobrazenimodel.png)
-![Vizuální model](assets/images/vizualni_model.png)
+![Zobrazeni](../assets/images/zobrazenimodel.png)
+![Vizuální model](../assets/images/vizualni_model.png)
 
 
 ## ▶️ Výběr tříd zahrnutých do aplikačního profilu
@@ -64,7 +64,7 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
 Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
-![Zobrazení třídy](assets/images/katalog_vizualni.png)
+![Zobrazení třídy](../assets/images/katalog_vizualni.png)
 
 ## ▶️ Přidání atributů
 U tříd je následně třeba přidat atributy.
@@ -72,12 +72,12 @@ U tříd je následně třeba přidat atributy.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
 
-![Atribut](assets/images/atribut.png)
+![Atribut](../assets/images/atribut.png)
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
 V části relationship přidám vztah mezi těmito třídami (has funding reference).
-![Relationship](assets/images/relationship_profile.png)
+![Relationship](../assets/images/relationship_profile.png)
 1. Atribut přidám symbolem plus.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
