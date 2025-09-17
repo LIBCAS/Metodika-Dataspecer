@@ -33,8 +33,8 @@ Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatov
 Mohu si zobrazit co obsahuje zvolený slovník.
 
 
-![Zobrazeni](assets/images/zobrazenimodel.png)
-![Vizuální model](assets/images/vizualni_model.png)
+![Zobrazeni](assets/images/zobrazenimodel.webp)
+![Vizuální model](assets/images/vizualni_model.webp)
 
 
 ## ▶️ Výběr tříd zahrnutých do aplikačního profilu
@@ -64,20 +64,25 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
 Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
-![Zobrazení třídy](assets/images/katalog_vizualni.png)
+![Zobrazení třídy](assets/images/katalog_vizualni.webp)
 
 ## ▶️ Přidání atributů
 U tříd je následně třeba přidat atributy.
 1. Atribut přidám symbolem plus. 
+2. **Name** Název atributu v mém aplikačním profilu (může být v několika jazycích).
+3. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
+4. **IRI** daného atributu v profilu,
+5. **Definition** popis daného atributu (může být v několika jazycích).
+6. **Domain cardinality** Kardinalita (opakovatelnost ). Viz níže.
+7. **Range** určuje typ hodnoty, kterou daný atribut (vlastnost) může mít. Zda to text či jiný typ hodnoty.
 
-2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
 
-![Atribut](assets/images/atribut.png)
+![Atribut](assets/images/atribut.webp)
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
 V části relationship přidám vztah mezi těmito třídami (has funding reference).
-![Relationship](assets/images/relationship_profile.png)
+![Relationship](assets/images/relationship_profile.webp)
 1. Atribut přidám symbolem plus.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**

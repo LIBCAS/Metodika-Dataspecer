@@ -20,5 +20,10 @@ V Dataspeceru není automatické ukládání.
 **Generalizations**
 Obsahuje seznam [specializací](slovník-pojmů.md# Specicializace)
 
-Po pravé straně je vizuální model.Zde jsou zobrazenvšechny používané prvky a vztahy mezi nimi.
+
+
+Po pravé straně je vizuální model.
+Zde jsou zobrazeny všechny používané prvky a vztahy mezi nimi.
+
+![ Vizualni model](assets/images/modelvizualni.webp)
 
