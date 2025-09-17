@@ -1,11 +1,34 @@
 site_name: Metodika pro správu metadatových profilů
-nav:
-  - Úvod: index.md
-  - Dataspecer: dataspecer.md
-  - Editor modelu: editor-modelu.md
-  - Aplikační profily: aplikační-profily.md
-  - Slovníky: slovníky.md
-  - Slovník pojmů: slovník-pojmů.md
+plugins:
+  - i18n:
+      docs_structure: folder
+      fallback_to_default: true
+      reconfigure_material: true
+      reconfigure_search: true
+      languages:
+        - locale: cs
+          default: true
+          name: Čeština
+          build: true
+          site_name: "Metodika pro správu metadatových profilů"
+          nav:
+            - Úvod: index.md
+            - Dataspecer: dataspecer.md
+            - Editor modelu: editor-modelu.md
+            - Aplikační profily: aplikační-profily.md
+            - Slovníky: slovníky.md
+            - Slovník pojmů: slovník-pojmů.md
+        - locale: en
+          name: English
+          build: true
+          site_name: "Methodology for Metadata Profile Management"
+          nav:
+            - Home: index.md
+            - Dataspecer: dataspecer.md
+            - Model Editor: editor-modelu.md
+            - Application Profiles: aplikační-profily.md
+            - Vocabularies: slovníky.md
+            - Glossary: slovník-pojmů.md
 site_url: https://libcas.github.io/Metodika-Dataspecer/
 site_dir: site
 theme:

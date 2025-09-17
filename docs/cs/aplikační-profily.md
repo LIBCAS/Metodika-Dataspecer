@@ -16,8 +16,8 @@ Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v na
 ## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
 
-![Nový projekt](assets/images/nový_projekt.webp)
-![Průvodce projektem](assets/images/nový_ap.webp)
+![Nový projekt](../assets/images/nový_projekt.webp)
+![Průvodce projektem](../assets/images/nový_ap.webp)
 
 1. Zadejte **název projektu** (např. „CCMM AP pro doménu XY“).
 
@@ -33,8 +33,13 @@ Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatov
 Mohu si zobrazit co obsahuje zvolený slovník.
 
 
+<<<<<<< HEAD:docs/aplikační-profily.md
 ![Zobrazeni](assets/images/zobrazenimodel.webp)
 ![Vizuální model](assets/images/vizualni_model.webp)
+=======
+![Zobrazeni](../assets/images/zobrazenimodel.png)
+![Vizuální model](../assets/images/vizualni_model.png)
+>>>>>>> 6edcd1e2e2792f40b1c8dd63cb08f32fb05fc224:docs/cs/aplikační-profily.md
 
 
 ## ▶️ Výběr tříd zahrnutých do aplikačního profilu
@@ -64,7 +69,11 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
 Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
+<<<<<<< HEAD:docs/aplikační-profily.md
 ![Zobrazení třídy](assets/images/katalog_vizualni.webp)
+=======
+![Zobrazení třídy](../assets/images/katalog_vizualni.png)
+>>>>>>> 6edcd1e2e2792f40b1c8dd63cb08f32fb05fc224:docs/cs/aplikační-profily.md
 
 ## ▶️ Přidání atributů
 U tříd je následně třeba přidat atributy.
@@ -77,12 +86,20 @@ U tříd je následně třeba přidat atributy.
 7. **Range** určuje typ hodnoty, kterou daný atribut (vlastnost) může mít. Zda to text či jiný typ hodnoty.
 
 
+<<<<<<< HEAD:docs/aplikační-profily.md
 ![Atribut](assets/images/atribut.webp)
+=======
+![Atribut](../assets/images/atribut.png)
+>>>>>>> 6edcd1e2e2792f40b1c8dd63cb08f32fb05fc224:docs/cs/aplikační-profily.md
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
 V části relationship přidám vztah mezi těmito třídami (has funding reference).
+<<<<<<< HEAD:docs/aplikační-profily.md
 ![Relationship](assets/images/relationship_profile.webp)
+=======
+![Relationship](../assets/images/relationship_profile.png)
+>>>>>>> 6edcd1e2e2792f40b1c8dd63cb08f32fb05fc224:docs/cs/aplikační-profily.md
 1. Atribut přidám symbolem plus.
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**

@@ -6,7 +6,7 @@ V rozhraní Dataspecer se specifikaci říká projekt.
 
 ## Správce projektů
 
-![Správce projektů](assets/images/manager.webp)
+![Správce projektů](../assets/images/manager.webp)
 
 Základním rozhraním je správce projektů.
 Každý slovník a každý aplikační profil je samostatným projektem.
@@ -14,7 +14,7 @@ Projekt lze rozkliknout a vidět jeho vnitřní strukturu, to však nebudeme pot
 
 ## Možnosti projektu
 
-![Možnosti projektu](assets/images/další_možnosti.webp)
+![Možnosti projektu](../assets/images/další_možnosti.webp)
 
 - **Exportovat specifikaci** stáhne specifikaci vytvořeného slovníku/aplikačního profilu ve formě zip archivu k publikaci na webu, např. na [GitHub Pages](https://pages.github.com).
 - **Zobrazit dokumentaci (cs/en)** zobrazí náhled dokumentace k vytvořené specifikaci v angličtině či češtině, viz [generovaná dokumentace](#generovana-dokumentace).
@@ -27,7 +27,7 @@ Projekt lze rozkliknout a vidět jeho vnitřní strukturu, to však nebudeme pot
 - **Odstranit** vymaže projekt.
 
 ## Generovaná dokumentace
-![Dokumentace](assets/images/dokumentace.webp)
+![Dokumentace](../assets/images/dokumentace.webp)
 Generovaná dokumentace používá systém [ReSpec](https://respec.org/docs/) tak, jako běžné webové specifikace.
 Obsahuje dokumentaci slovníku či aplikačního profilu, včetně odkazů na jednotlivé koncepty v přepoužitých slovnících a aplikačních profilech.
 Dále obsahuje přílohy se strojově čitelnou reprezentací specifikace, případně s technickými artefakty.
@@ -35,10 +35,10 @@ Dokumentace je připravena k publikaci na webu, např. na [GitHub Pages](https:/
 
 ## Nová specifikace
 Pro vytvoření nové specifikace klikneme na tlačítko Průvodce projektem.
-![Nový projekt](assets/images/nový_projekt.webp)
+![Nový projekt](../assets/images/nový_projekt.webp)
 
 A zvolíme jednu z možností:
-![Průvodce projektem](assets/images/průvodce_projektem.webp)
+![Průvodce projektem](../assets/images/průvodce_projektem.webp)
 
 [**Slovník**](slovníky.md) vytváříme v případě, že potřebujeme definovat nové pojmy - třídy a vlastnosti.
 

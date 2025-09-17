@@ -22,11 +22,25 @@
 
 <!-- Footer -->
 <footer class="md-footer">
+  {% if i18n_page_locale == "cs" %}
 
   <div class="md-grid">
     <div class="custom-footer md-typeset" style="max-width: 60%; margin: 0 auto; padding: 1em 0;">
       <div class="footer-logos">
-        <img src="{{ base_url }}/assets/images/eu-mšmt.webp" alt="EU and MŠMT Logos">
+        <img src="{{ base_url }}/assets/images/eu-mšmt-cs.webp" alt="EU and MŠMT Logos">
+        <p>
+          Tento výstup byl vytvořen s finanční podporou iniciativy <a href="https://www.eosc.cz/projekty/narodni-podpora-pro-eosc">EOSC CZ</a> prostřednictvím projektu Národní repozitářová platforma pro výzkumná data (CZ.02.01.01/00/23_014/0008787), financovaného z Operačního programu Jan Amos Komenský (OP JAK) Ministerstva školství, mládeže a tělovýchovy České republiky (MŠMT).
+        </p>
+        <img src="{{ base_url }}/assets/images/eosc-cz.webp" alt="EOSC CZ Logo">
+      </div>
+    </div>
+  </div>
+
+  {% elif i18n_page_locale == "en" %}
+  <div class="md-grid">
+    <div class="custom-footer md-typeset" style="max-width: 60%; margin: 0 auto; padding: 1em 0;">
+      <div class="footer-logos">
+        <img src="{{ base_url }}/assets/images/eu-mšmt-en.webp" alt="EU and MŠMT Logos">
         <p>
           This project output was developed with financial contributions from the
           <a href="https://www.eosc.cz/projekty/narodni-podpora-pro-eosc">EOSC CZ</a> initiative through the project
@@ -38,6 +52,7 @@
       </div>
     </div>
   </div>
+  {% endif %}
 
   <!-- Link to previous and/or next page -->
   {% if "navigation.footer" in features %}
