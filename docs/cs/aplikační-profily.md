@@ -33,8 +33,6 @@ Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatov
 Mohu si zobrazit co obsahuje zvolený slovník.
 
 
-
-
 ## ▶️ Výběr tříd zahrnutých do aplikačního profilu
 
 Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.
@@ -61,26 +59,22 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
-Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
-
-
 ## ▶️ Přidání atributů
-U tříd je následně třeba přidat atributy.
+![Atribut](../assets/images/atribut.webp)
+U tříd je možné  přidat atributy. Atribut je vlastnot třídy.
 1. Atribut přidám symbolem plus. 
-
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
-
+3. Přidáme jeho popis (je možné vícejazyčně) **Definition**.
+4. Poznámku k jeho použití v rámci našeho aplikačního profilu **Usage note**
+5. Nastavíme kardinalitu - opakovatelnost **Domain cardinality**
+6. Vybereme jaký typ znaků může atribut obsahovat **Range**
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
-V části relationship přidám vztah mezi těmito třídami (has funding reference).
-<<<<<<< HEAD:docs/aplikační-profily.md
+
+V části relationship přidám vztah mezi těmito třídami (has funding reference)
 ![Relationship](assets/images/relationship_profile.webp)
-=======
 
-1. Atribut přidám symbolem plus.
-
-2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**
 **Cardinality**
 Určuje kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.
 

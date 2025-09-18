@@ -18,12 +18,17 @@ V Dataspeceru není automatické ukládání.
 **Profiles (Profily)** Zde vidíme všechny prvky přidané do vytvořeného [Aplikačního profilu](slovník-pojmů.md#aplikacni-profil). 
 
 **Generalizations**
-Obsahuje seznam [specializací](slovník-pojmů.md#specializace)
+Obsahuje seznam specializačních vazeb.
 
 
 
 Po pravé straně je vizuální model.
 Zde jsou zobrazeny všechny používané prvky a vztahy mezi nimi.
 
+
 ![ Vizualni model](assets/images/modelvizualni.webp)
 
+
+V sekci layout je možné nastavit jakým způsobem se bude vizuální model zobrazovat.
+
+![ Layout](assets/images/layout.webp)
