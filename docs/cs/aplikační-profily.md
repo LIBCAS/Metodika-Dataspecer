@@ -33,8 +33,8 @@ Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatov
 Mohu si zobrazit co obsahuje zvolený slovník.
 
 
-![Zobrazeni](../assets/images/zobrazenimodel.png)
-![Vizuální model](../assets/images/vizualni_model.png)
+![Zobrazeni](../assets/images/zobrazenimodel.webp)
+![Vizuální model](../assets/images/vizualni_model.webp)
 
 
 ## ▶️ Výběr tříd zahrnutých do aplikačního profilu
@@ -64,15 +64,22 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
 Vlevo vidím katalog - třídy v aplikačním profiu. Přidané jsou vybarvené zeleně. Vpravo je vizuální model kde vidím
-![Zobrazení třídy](../assets/images/katalog_vizualni.png)
+![Zobrazení třídy](../assets/images/katalog_vizualni.webp)
 
 ## ▶️ Přidání atributů
 U tříd je následně třeba přidat atributy.
 1. Atribut přidám symbolem plus. 
 
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
+3. **IRI** 
+4. **Definition** Vysvětlení atributu (může být v různých jazycích)
+5. **Usage note**  Poznámka ke způsobu použití profilu.
+6. **Domain cardinality** Kardinalita - opakovatelnost viz níže.
+7. **Range** Range určuje typ hodnoty, kterou daný atribut (vlastnost) může mít.
 
-![Atribut](../assets/images/atribut.png)
+ „jakého typu bude hodnota této vlastnosti“ – jestli je to text, číslo, datum, jazykový řetězec, atd.
+
+![Atribut](../assets/images/atribut.webp)
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
