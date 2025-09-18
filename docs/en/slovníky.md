@@ -14,4 +14,4 @@ I can use frequently used vocabularies (well known vocabularies), import vocabul
 I create a new vocabulary and add new concepts (plus symbol). I must fill in the name, IRI, and definition.
 Subsequently, I add the defined concepts to the application profile.
 
-![Vocabulary](../assets/images/slovnik_class.png)
+![Vocabulary](../assets/images/slovnik_class.webp)
