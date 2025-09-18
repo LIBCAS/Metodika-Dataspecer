@@ -61,13 +61,20 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 ## ▶️ Přidání atributů
 ![Atribut](../assets/images/atribut.webp)
+
 U tříd je možné  přidat atributy. Atribut je vlastnot třídy.
+
 1. Atribut přidám symbolem plus. 
+
 2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
+
 3. Přidáme jeho popis (je možné vícejazyčně) **Definition**.
-4. Poznámku k jeho použití v rámci našeho aplikačního profilu **Usage note**
-5. Nastavíme kardinalitu - opakovatelnost **Domain cardinality**
-6. Vybereme jaký typ znaků může atribut obsahovat **Range**
+
+4. Poznámku k jeho použití v rámci našeho aplikačního profilu **Usage note**.
+
+5. Nastavíme kardinalitu - opakovatelnost **Domain cardinality**.
+
+6. Vybereme jaký typ znaků může atribut obsahovat **Range**.
 
 ## ▶️ Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).

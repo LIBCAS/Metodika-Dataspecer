@@ -14,9 +14,8 @@ Můžu využít často používaných slovníků (well known vocabularies), impo
 Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
 Následně si nadefinované pojmy přidám do aplikačního profilu.
 
-<<<<<<< HEAD:docs/slovníky.md
+
 ![Slovnik](assets/images/slovnik_class.webp)
-=======
-![Slovnik](../assets/images/slovnik_class.png)
->>>>>>> 6edcd1e2e2792f40b1c8dd63cb08f32fb05fc224:docs/cs/slovníky.md
+
+
 
