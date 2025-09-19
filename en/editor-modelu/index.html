@@ -281,6 +281,19 @@
         
       
       
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    Model Editor
+    
+  </span>
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -292,6 +305,52 @@
   
 
       </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Catalog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Panel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canvas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
       
     </li>
   
@@ -383,6 +442,41 @@
     
   
   
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#catalog" class="md-nav__link">
+    <span class="md-ellipsis">
+      Catalog
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#control-panel" class="md-nav__link">
+    <span class="md-ellipsis">
+      Control Panel
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#canvas" class="md-nav__link">
+    <span class="md-ellipsis">
+      Canvas
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -398,19 +492,31 @@
 
 
 <h1 id="model-editor">Model Editor</h1>
-<p><img alt=" Catalog" src="../../assets/images/katalog.webp" /> </p>
-<p>In the main interface, we see a catalog on the left side. It contains elements that we can add to our own application profile.</p>
-<p>In the top interface, I have the option to save my work (save button). Work needs to be saved regularly.
-There is no automatic saving in Dataspecer.</p>
-<p><img alt=" Save" src="../../assets/images/save.webp" /></p>
+<p>The model editor has three basic parts - Model catalog on the left, canvas on the right, and control panel at the top.
+<img alt="Model Editor" src="../../assets/images/cme.webp" /> </p>
+<p>In the model editor, both <a href="../slovn%C3%ADky/">Vocabularies</a>, containing definitions of classes and properties, and <a href="../aplika%C4%8Dn%C3%AD-profily/">Application Profiles</a>, containing profiles of classes and profiles of properties, are edited.
+Theoretically, one model can be a combination of both, but we do not recommend this methodologically.</p>
+<h2 id="catalog">Catalog</h2>
+<p>In the main interface, we see a catalog on the left side.
+The catalog shows loaded vocabularies and application profiles, lists of classes, properties, profiles, and generalizations (specializations), including inheritance and profiling hierarchies.</p>
+<p><img alt="Catalog" src="../../assets/images/katalog.webp" /> </p>
 <p><strong>Classes</strong>
- <a href="../slovn%C3%ADk-pojm%C5%AF/#class">Class</a> designates a type of objects that share the same properties and meaning.</p>
+ <a href="../slovn%C3%ADk-pojm%C5%AF/#trida-class">Class</a> designates a type of objects that share the same properties and meaning.</p>
 <p><strong>Relationships</strong> Relationships between individual classes.</p>
-<p><strong>Attributes</strong> <a href="../slovn%C3%ADk-pojm%C5%AF/#attribute">Attributes</a> are properties of individual classes.</p>
-<p><strong>Profiles</strong> Here we see all elements added to the created <a href="../slovn%C3%ADk-pojm%C5%AF/#application-profile">Application Profile</a>.</p>
+<p><strong>Attributes</strong> <a href="../slovn%C3%ADk-pojm%C5%AF/#atribut-attribute">Attributes</a> are properties of individual classes.</p>
+<p><strong>Profiles</strong> Here we see all elements added to the created <a href="../slovn%C3%ADk-pojm%C5%AF/#aplikacni-profil">Application Profile</a>.</p>
 <p><strong>Generalizations</strong>
-Contains a list of <a href="../slovn%C3%ADk-pojm%C5%AF/#specialization">specializations</a></p>
-<p>On the right side is the visual model. Here all used elements and relationships between them are displayed.</p>
+Contains a list of specialization relationships.</p>
+<h2 id="control-panel">Control Panel</h2>
+<p>In the control panel, the most important element is the option to save work (💾 Save button), or save and leave the editor (💾👋 Save and leave button).
+Work needs to be saved regularly, there is no automatic saving in Dataspecer.</p>
+<p><img alt="Save" src="../../assets/images/save.webp" /></p>
+<h2 id="canvas">Canvas</h2>
+<p>On the right side is the canvas displaying the current diagram (view) showing model elements and relationships between them.
+There can be multiple diagrams in one specification, they are created and switched in the control panel at the top.</p>
+<p><img alt="Visual Model" src="../../assets/images/modelvizualni.webp" /></p>
+<p>In the layout section, it is possible to set how the visual model will be displayed.</p>
+<p><img alt="Layout" src="../../assets/images/layout.webp" /></p>
 
 
 

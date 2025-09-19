@@ -344,9 +344,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#creating-a-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a vocabulary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a vocabulary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adding-existing-vocabularies-to-the-project" class="md-nav__link">
     <span class="md-ellipsis">
       Adding existing vocabularies to the project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-in-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      What in the end?
     </span>
   </a>
   
@@ -431,9 +482,60 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#creating-a-vocabulary" class="md-nav__link">
+    <span class="md-ellipsis">
+      Creating a vocabulary
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Creating a vocabulary">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#classes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Classes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#attributes" class="md-nav__link">
+    <span class="md-ellipsis">
+      Attributes
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#properties" class="md-nav__link">
+    <span class="md-ellipsis">
+      Properties
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#adding-existing-vocabularies-to-the-project" class="md-nav__link">
     <span class="md-ellipsis">
       Adding existing vocabularies to the project
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#what-in-the-end" class="md-nav__link">
+    <span class="md-ellipsis">
+      What in the end?
     </span>
   </a>
   
@@ -456,15 +558,38 @@
 
 
 <h1 id="vocabularies">Vocabularies</h1>
-<p>In case I want to add my own elements to the application profile that are not part of CCMM or another usable vocabulary, I define them in my new vocabulary, which I then use in the application profile.</p>
+<p>Vocabularies contain identifiers, names, and definitions of classes and concepts.
+A vocabulary needs to be created, for example, when we want to add our own concepts to the application profile that are not part of CCMM or another usable vocabulary.
+In such a case, we define them in our new vocabulary, which we then use in the application profile.</p>
+<p>We create a vocabulary as a new project of type Vocabulary, which takes us to the <a href="../editor-modelu/">model editor</a>.</p>
 <p><img alt="New Project" src="../../assets/images/nov%C3%BD_projekt.webp" />
 <img alt="Vocabulary" src="../../assets/images/pr%C5%AFvodce_projektem.webp" /></p>
+<h2 id="creating-a-vocabulary">Creating a vocabulary</h2>
+<p>When creating a vocabulary, it is necessary to define new classes, attributes, and properties, or their relationships, such as domain, range, or specialization relationship.
+This can be done using the ➕ button in the corresponding catalog tab.</p>
+<h3 id="classes">Classes</h3>
+<p>The dialog for adding a class allows us to fill in the name, identifier, what the class is a specialization of, definition, and URL of external documentation for the class.
+This is useful if it already exists somewhere, but the given specification was not created in Dataspecer.
+<img alt="Dialog for new class" src="../../assets/images/slovnik_class.webp" /></p>
+<p>If we fill in the external documentation URL, then in the documentation of the application profile in which we use this class, the link will lead to the external documentation instead of the vocabulary documentation generated from Dataspecer.</p>
+<h3 id="attributes">Attributes</h3>
+<p>We can add an attribute either from the catalog or after selecting a class on the canvas.
+<img alt="➕ button for new attribute" src="../../assets/images/add_attribute.webp" /></p>
+<h3 id="properties">Properties</h3>
+<p>A property or generalization/specialization can be added either in the catalog or by dragging the mouse from the 🔗 symbol between classes.
+<img alt="Dragging from 🔗 for new relationship" src="../../assets/images/new_relationship.gif" /></p>
 <h2 id="adding-existing-vocabularies-to-the-project">Adding existing vocabularies to the project</h2>
-<p>I can use frequently used vocabularies (well known vocabularies), import vocabulary through URL (vocabulary from URL - the link to the vocabulary must be in <a href="../slovn%C3%ADk-pojm%C5%AF/#rdf">TTL</a> format), or define my own.</p>
-<p><img alt="Add" src="../../assets/images/add_vocabulary.webp" /></p>
-<p>I create a new vocabulary and add new concepts (plus symbol). I must fill in the name, IRI, and definition.
-Subsequently, I add the defined concepts to the application profile.</p>
-<p><img alt="Vocabulary" src="../../assets/images/slovnik_class.webp" /></p>
+<p>To use concepts from existing vocabularies, for example for domain or range of some property, or for specialization of a class or property, it is necessary to add the existing vocabulary as another model using the ➕ button in the Vocabularies section in the catalog.
+<img alt="Add vocabulary" src="../../assets/images/add_vocabulary.webp" /></p>
+<p>You can use frequently used vocabularies (well known vocabularies),</p>
+<p><img alt="Add well-known vocabulary" src="../../assets/images/add_vocabulary_well_known.webp" /></p>
+<p>or import a vocabulary via URL, where the vocabulary must be available in some <a href="../slovn%C3%ADk-pojm%C5%AF/#rdf">RDF</a> serialization, and the web server hosting the vocabulary must be configured to support <a href="../slovn%C3%ADk-pojm%C5%AF/#cross-origin-resource-sharing-cors">CORS</a> technique.</p>
+<p><img alt="Add custom vocabulary" src="../../assets/images/add_vocabulary_custom.webp" /></p>
+<p>Subsequently, classes and properties from the vocabulary will be added to the catalog, and it is possible to add them to the canvas and use them.</p>
+<p><img alt="Added DCAT vocabulary" src="../../assets/images/dcat_added.webp" /></p>
+<h2 id="what-in-the-end">What in the end?</h2>
+<p>Save using the <code>💾👋 Save and leave</code> button and <a href="../dataspecer/#moznosti-projektu">generate documentation</a>.
+Subsequently, we can publish the vocabulary on the web and use it, for example, when creating an <a href="../aplika%C4%8Dn%C3%AD-profily/">application profile</a>.</p>
 
 
 
