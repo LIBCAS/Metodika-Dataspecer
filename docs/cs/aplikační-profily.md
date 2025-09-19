@@ -91,3 +91,7 @@ V příkladu je mezi profilem třídy `Dataset`a profilem třídy `Distribution`
 
 Range cardinality `[1..*]` znamená, že každá datová sada má vždy alespoň jednu distribuci, ale může jich mít více.
 Domain cardinality `[0..1]` znamená pro každou distribuci, že může ale nemusí být propojena s datovou sadou, a když, tak maximálně s jednou.
+
+## Co nakonec?
+Uložit pomocí tlačítka `💾👋 Save and leave` a [vygenerovat dokumentaci](dataspecer.md#moznosti-projektu).
+Následně můžeme aplikační profil vystavit na web, a použít třeba při tvorbě jiného aplikačního profilu.

@@ -45,3 +45,7 @@ nebo importovat slovník prostřednictvím URL, přičemž je třeba, aby byl sl
 Následně budou třídy a vlastnosti ze slovníku přidány do katalogu, a je možné je přidávat na plátno a používat.
 
 ![Přidaný slovník DCAT](../assets/images/dcat_added.webp)
+
+## Co nakonec?
+Uložit pomocí tlačítka `💾👋 Save and leave` a [vygenerovat dokumentaci](dataspecer.md#moznosti-projektu).
+Následně můžeme slovník vystavit na web, a použít třeba při tvorbě [aplikačního profilu](aplikační-profily.md).

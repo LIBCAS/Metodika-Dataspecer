@@ -26,13 +26,6 @@ Projekt lze rozkliknout a vidět jeho vnitřní strukturu, to však nebudeme pot
 - **Upravit data modelu** slouží pro debugování, nebudeme potřebovat.
 - **Odstranit** vymaže projekt.
 
-## Generovaná dokumentace
-![Dokumentace](../assets/images/dokumentace.webp)
-Generovaná dokumentace používá systém [ReSpec](https://respec.org/docs/) tak, jako běžné webové specifikace.
-Obsahuje dokumentaci slovníku či aplikačního profilu, včetně odkazů na jednotlivé koncepty v přepoužitých slovnících a aplikačních profilech.
-Dále obsahuje přílohy se strojově čitelnou reprezentací specifikace, případně s technickými artefakty.
-Dokumentace je připravena k publikaci na webu, např. na [GitHub Pages](https://pages.github.com).
-
 ## Nová specifikace
 Pro vytvoření nové specifikace klikneme na tlačítko Průvodce projektem.
 ![Nový projekt](../assets/images/nový_projekt.webp)
@@ -47,3 +40,10 @@ Jak slovník, tak aplikační profil je tvořen v [**editoru modelu**](editor-mo
 [**Aplikační profil**](aplikační-profily.md) vytváříme, pokud chceme specifikovat použití částí jiných specifikací v našem konkrétním kontextu. Například pokud vytváříme aplikační profil CCMM pro konkrétní doménový repozitář.
 
 **Datové schéma** slouží pro tvrobu datových struktur přímo na základě existujících slovníků. Tuto volbu nebudeme používat.
+
+## Generovaná dokumentace
+![Dokumentace](../assets/images/dokumentace.webp)
+Generovaná dokumentace používá systém [ReSpec](https://respec.org/docs/) tak, jako běžné webové specifikace.
+Obsahuje dokumentaci slovníku či aplikačního profilu, včetně odkazů na jednotlivé koncepty v přepoužitých slovnících a aplikačních profilech.
+Dále obsahuje přílohy se strojově čitelnou reprezentací specifikace, případně s technickými artefakty.
+Dokumentace je připravena k publikaci na webu, např. na [GitHub Pages](https://pages.github.com).
