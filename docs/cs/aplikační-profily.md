@@ -1,12 +1,12 @@
 
-Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě metadata doménového repozitáře).
-Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. [Czech Core Metadata Model (CCMM)](https://techlib.github.io/CCMM/en/).
+Aplikační profil (application profile, AP) definuje, jaké pojmy z jakých specifikací, slovníků či jiných aplikačních profilů, se v daném kontextu používají a jak.
+Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem [Czech Core Metadata Model (CCMM)](https://www.ccmm.cz/).
 
 
 ## Co si ujasnit před vytvořením metadatového profilu pro repozitář
 1. Potřebujeme vlastní aplikační profil? Pokud CCMM pokrývá mé potřeby, žádný jiný aplikační profil nepotřebuji.
 
-2. Co budeme popisovat? Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu, tj. RDF? Pokud ne, potřebujeme chybějící pojmy dodefinovat ve vlastním slovníku, který bude dále použit v novém aplikačním profilu.
+2. Co budeme popisovat? Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu, tj. RDF? Pokud ne, potřebujeme chybějící pojmy dodefinovat ve [vlastním slovníku](slovníky.md), který bude dále použit v novém aplikačním profilu.
 
 3. Rozmyslíme si, jaké prvky z CCMM a dalších slovníků či profilů převezmeme, a jakým způsobem je budeme používat v našem profilu. Nastavíme pravidla, jak je budeme používat. Např. zda budou povinné, s jakou kardinalitou, apod. Přitom nesmíme porušit pravidla CCMM.
 
@@ -32,8 +32,17 @@ V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikač
 Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.
 
+### Začínáme profilovat - všechno nebo nic
+Jakmile vytvoříme aplikační profil, a pro jednoduchost předpokládejme, že se jedná o profil CCMM, uvítá nás [editor modelu](editor-modelu.md) s prázdným plátnem reprezentujícím nový aplikační profil.
+Zde máme dvě možnosti jak postupovat.
+Buďto si z CCMM chceme vybrat, co použijeme, což postupně uděláme pomocí ikony 🧲 u profilů tříd, vlastností a atributů, o které máme zájem, v záložce Profily.
+![Akce profilování](../assets/images/class_profile.webp)
 
-## ▶️ Výběr tříd zahrnutých do aplikačního profilu
+Alternativně můžeme profilovat vše v CCMM, a co nepotřebujeme, postupně odmazávat.
+To uděláme ikonou 🧲 u modelu Czech Core Metadata Model v záložce Vocabularies.
+![Akce profilování všeho](../assets/images/voc_profile.webp)
+
+### Výběr tříd zahrnutých do aplikačního profilu
 
 Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.
 
@@ -59,7 +68,7 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
-## ▶️ Přidání atributů
+### Přidání atributů
 ![Atribut](../assets/images/atribut.webp)
 
 U tříd je možné  přidat atributy. Atribut je vlastnot třídy.
@@ -76,7 +85,7 @@ U tříd je možné  přidat atributy. Atribut je vlastnot třídy.
 
 6. Vybereme jaký typ znaků může atribut obsahovat **Range**.
 
-## ▶️ Přidání vztahů mezi třídami
+### Přidání vztahů mezi třídami
 Nyní si přidáme do svého profilu další třídu (funding reference).
 
 V části relationship přidám vztah mezi těmito třídami (has funding reference)
@@ -85,17 +94,17 @@ V části relationship přidám vztah mezi těmito třídami (has funding refere
 **Cardinality**
 Určuje kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.
 
-Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.
+Například pokud má datová sada (Dataset) vlastnost title, kardinalita `1..1` znamená, že musí mít právě jeden název. Pokud by byla kardinalita `0..*`, může mít žádný, jeden nebo více názvů.
 
 Kardinalita se často zapisuje ve formátu:
 
-0..1 – nejvýše jeden výskyt (nepovinný),
+`0..1` – nejvýše jeden výskyt (nepovinný),
 
-1..1 – právě jeden výskyt (povinný),
+`1..1` – právě jeden výskyt (povinný),
 
-0..* – libovolný počet výskytů (včetně nuly),
+`0..*` – libovolný počet výskytů (včetně nuly),
 
-1..* – alespoň jeden výskyt.
+`1..*` – alespoň jeden výskyt.
 
 
 
