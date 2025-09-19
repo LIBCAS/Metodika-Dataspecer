@@ -1,12 +1,12 @@
 # Application Profiles
 
-An application profile (AP) in the field of metadata modeling is a set of rules and specifications that determine how existing metadata standards should be used in a specific context (in our case, metadata for a domain repository).
-Before we start creating the actual application profile for our repository in Dataspecer, it is necessary to become thoroughly familiar with the default metadata model. [Czech Core Metadata Model (CCMM)](https://techlib.github.io/CCMM/en/).
+An application profile (AP) defines which concepts from which specifications, vocabularies, or other application profiles are used in a given context and how.
+Before we start creating the actual application profile for our repository in Dataspecer, it is necessary to become thoroughly familiar with the default metadata model [Czech Core Metadata Model (CCMM)](https://www.ccmm.cz/).
 
 ## What to clarify before creating a metadata profile for a repository
 1. Do we need our own application profile? If CCMM covers my needs, I don't need any other application profile.
 
-2. What will we describe? Does the default metadata model (CCMM) and available vocabularies allow describing all necessary entities? Are there domain vocabularies that can be used for our repository? Are they available in a suitable format, i.e., RDF? If not, we need to define missing concepts in our own vocabulary, which will then be used in the new application profile.
+2. What will we describe? Does the default metadata model (CCMM) and available vocabularies allow describing all necessary entities? Are there domain vocabularies that can be used for our repository? Are they available in a suitable format, i.e., RDF? If not, we need to define missing concepts in our [own vocabulary](slovníky.md), which will then be used in the new application profile.
 
 3. We think about which elements from CCMM and other vocabularies or profiles we will adopt, and how we will use them in our profile. We set rules on how to use them. For example, whether they will be mandatory, with what cardinality, etc. We must not violate CCMM rules.
 
@@ -32,64 +32,66 @@ In the main menu, choose "Project Guide" – Create application profile.
 The *profile* tab contains all vocabularies used in the default metadata model.
 I can display what the selected vocabulary contains.
 
-![Display](../assets/images/zobrazenimodel.png)
-![Visual Model](../assets/images/vizualni_model.png)
+### Starting to profile - all or nothing
+Once we create an application profile, and for simplicity let's assume it's a CCMM profile, we're greeted by the [model editor](editor-modelu.md) with a blank canvas representing the new application profile.
+Here we have two options for how to proceed.
+Either we want to select what we'll use from CCMM, which we'll gradually do using the 🧲 icon for class profiles, properties, and attributes we're interested in, in the `Profiles` tab.
+![Profiling action](../assets/images/class_profile.webp)
 
-## ▶️ Selection of classes included in the application profile
+Alternatively, we can profile everything in CCMM, and gradually delete what we don't need.
+We do this using the 🧲 icon for the `Czech Core Metadata Model` model in the `Vocabularies` tab.
+![Action for profiling everything](../assets/images/voc_profile.webp)
 
-After creating a new application profile, the application profile editor opens.
+### Creating a class profile
 
-The *profile* tab contains all elements used in the default metadata model.
+We can add either profiles of classes, attributes, and properties from vocabularies in the respective catalog tabs, or profiles of their profiles in existing application profiles, on the `Profiles` tab.
+We always create a profile in the current application profile using the 🧲 icon.
 
-I choose an item that I want to add to my application profile (e.g., Agent).  
-Click on **Create new profile** (horseshoe symbol).
+Profiles of classes, properties, attributes, and their profiles that are in the current application profile can be seen on the `Profiles` tab.
 
-We decide whether we want to adopt the class as it is defined in the default metadata model, or we will modify it.
+After clicking 🧲, a window opens for setting up the profile.
+For classes, you can modify:
 
 **Name:** Class naming.
 
-**IRI** *(International Resource Identifier)* Class identifier.
+**IRI** *(International Resource Identifier)* Class identifier - must be unique, which Dataspecer does not ensure.
 
 **Specialization:** Whether it is a specialization of another class.
 
-**Definition:** Brief description of the given class. Can also be stated in several languages.  
-**Example:** Agent: Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.*
+**Definition:** Definition of the class profile. Can also be stated in several languages.
 
-**Usage note:** Note on the use of the given class. E.g., "In this profile, dataset is used for XYZ."
+**Usage note:** Note on the use of the given class in the context of the application profile. E.g., "In this profile, dataset is used for XYZ."
 
-**External documentation:** Link to external documentation describing the given class.
+**External documentation URL:** Link to external documentation describing the given class. This link will be used in profiles of the current profile instead of documentation generated from this profile.
 
-**Role:** I determine whether the role will be main or supportive. Main roles are important elements of the metadata profile, e.g., dataset, catalog. Supportive includes less important ones, e.g., theme. Roles are not inherited between profiles.
+**Role:** I determine whether the class profile will have a main or supportive role. Main roles are important elements of the metadata profile, e.g., dataset, catalog. Supportive includes less important ones, e.g., theme. Roles are not inherited between profiles. In the resulting documentation, class profiles are then grouped according to role - first main, then secondary.
 
-On the left I see the catalog - classes in the application profile. Added ones are colored green. On the right is the visual model where I see
-![Class Display](../assets/images/katalog_vizualni.png)
+### Creating an attribute profile
+![New attribute profile](../assets/images/new_attr_profile.gif)
 
-## ▶️ Adding attributes
-For classes, it is then necessary to add attributes.
-1. I add an attribute with the plus symbol.
+1. In the `Profiles` or `Attributes` tab, we select an attribute profile or attribute whose profile we want to create (which we want to use in our AP), and press 🧲.
+2. We set the class profile in the current AP that will be the domain of the attribute profile.
+3. (Optional) We can modify the name, identifier, definition, and note on its use within our application profile and external documentation URL.
+4. (Optional) We set the cardinality **Range cardinality**
+5. (Optional) We select the data type in **Range**, e.g., `xsd:boolean`, `xsd:string`, `rdf:langString`, etc.
+6. (Optional) We select the obligation level - `Undefined`, if we don't use this in our AP, or `Mandatory`, `Recommended`, or `Optional`, if we do. Within the diagram, attributes will then be in sections according to this obligation.
 
-2. Define what you are based on **Profile of** and for which class you define the attribute **Domain**.
+**Note:** For attributes and their profiles, or relationships displayed as attributes, i.e., within a class or class profile, the order can be changed using 🔼🔽 after clicking on the class. Alternatively, you can change the order and change the display of relationships as attributes in the dialog after pressing the 📏 button on the class.
 
-![Attribute](../assets/images/atribut.png)
+### Creating a relationship profile
+To create a relationship profile, we proceed the same way as for an attribute profile, i.e., in the catalog in the `Relationships` or `Profiles` tab using the 🧲 button.
 
-## ▶️ Adding relationships between classes
-Now we add another class to our profile (funding reference).
-In the relationship section, I add a relationship between these classes (has funding reference).
-![Relationship](../assets/images/relationship_profile.png)
-1. I add an attribute with the plus symbol.
+The only difference is that we need to select not only the domain but also the range of the relationship profile, again one of the class profiles in our AP.
+It may also make sense to fill in **Domain cardinality** to determine cardinality in the opposite direction of the relationship.
 
-2. Define what you are based on **Profile of** and for which class you define the attribute **Domain**
-**Cardinality**
-Determines how many times a certain relationship or property between two classes can or must be used. In other words, it describes the number of occurrences that are allowed or required between objects.
+Let's recap what cardinalities mean.
+![Relationship cardinality](../assets/images/dataset_distribution.webp)
 
-For example, if a dataset has a title property, cardinality 1..1 means it must have exactly one title. If the cardinality were 0..*, it could have zero, one, or more titles.
+In the example, there is a `has distribution` relationship profile between the `Dataset` class profile and the `Distribution` class profile, leading from `Dataset` (domain) to `Distribution` (range).
 
-Cardinality is often written in the format:
+Range cardinality `[1..*]` means that each dataset always has at least one distribution, but can have more.
+Domain cardinality `[0..1]` means for each distribution that it may or may not be connected to a dataset, and when it is, at most to one.
 
-0..1 – at most one occurrence (optional),
-
-1..1 – exactly one occurrence (mandatory),
-
-0..* – any number of occurrences (including zero),
-
-1..* – at least one occurrence.
+## What in the end?
+Save using the `💾👋 Save and leave` button and [generate documentation](dataspecer.md#moznosti-projektu).
+Subsequently, we can publish the application profile on the web and use it, for example, when creating another application profile.

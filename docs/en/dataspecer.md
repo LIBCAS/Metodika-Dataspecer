@@ -26,13 +26,6 @@ You can click on a project to see its internal structure, but we won't need that
 - **Edit data model** is used for debugging, we won't need it.
 - **Delete** deletes the project.
 
-## Generated Documentation
-![Documentation](../assets/images/dokumentace.webp)
-The generated documentation uses the [ReSpec](https://respec.org/docs/) system, like common web specifications.
-It contains documentation of the vocabulary or application profile, including links to individual concepts in reused vocabularies and application profiles.
-It also contains appendices with machine-readable representation of the specification, possibly with technical artifacts.
-The documentation is ready for web publication, e.g., on [GitHub Pages](https://pages.github.com).
-
 ## New Specification
 To create a new specification, click on the Project Guide button.
 ![New Project](../assets/images/nový_projekt.webp)
@@ -40,8 +33,17 @@ To create a new specification, click on the Project Guide button.
 And choose one of the options:
 ![Project Guide](../assets/images/průvodce_projektem.webp)
 
+Both vocabulary and application profile are created in the [**model editor**](editor-modelu.md).
+
 [**Vocabulary**](slovníky.md) is created when we need to define new concepts - classes and properties.
 
 [**Application Profile**](aplikační-profily.md) is created when we want to specify the use of parts of other specifications in our specific context. For example, when creating a CCMM application profile for a specific domain repository.
 
 **Data Schema** is used to create data structures directly based on existing vocabularies. We will not use this option.
+
+## Generated Documentation
+![Documentation](../assets/images/dokumentace.webp)
+The generated documentation uses the [ReSpec](https://respec.org/docs/) system, like common web specifications.
+It contains documentation of the vocabulary or application profile, including links to individual concepts in reused vocabularies and application profiles.
+It also contains appendices with machine-readable representation of the specification, possibly with technical artifacts.
+The documentation is ready for web publication, e.g., on [GitHub Pages](https://pages.github.com).
