@@ -19,7 +19,7 @@ Projekt lze rozkliknout a vidět jeho vnitřní strukturu, to však nebudeme pot
 - **Exportovat specifikaci** stáhne specifikaci vytvořeného slovníku/aplikačního profilu ve formě zip archivu k publikaci na webu, např. na [GitHub Pages](https://pages.github.com).
 - **Zobrazit dokumentaci (cs/en)** zobrazí náhled dokumentace k vytvořené specifikaci v angličtině či češtině, viz [generovaná dokumentace](#generovana-dokumentace).
 - **Upravit šablonu dokumentace** Otevře se HTML editor, kde lze editovat vzhled šablony vytvářené dokumentace. Ta využívá systém [ReSpec](https://respec.org/docs/).
-- **Importovat z URL** umožní přidat existující slovník či aplikační profil vytovřený v Dataspeceru do aktuální specifikace.
+- **Importovat z URL** umožní přidat existující slovník či aplikační profil vytvořený v Dataspeceru do aktuální specifikace.
 - **Zálohovat do souboru** stáhne zálohu projektu ve formě ZIP archivu, který lze na libovolné Dataspecer instanci opět nahrát pomocí tlačítka Import. Nelze však takto nahrát zálohu na instanci, kde již importovaný projekt existuje.
 - **Duplikovat** Vytvoří kopii projektu.   
 - **Rename** přejmenuje projekt.  
@@ -39,6 +39,8 @@ Pro vytvoření nové specifikace klikneme na tlačítko Průvodce projektem.
 
 A zvolíme jednu z možností:
 ![Průvodce projektem](../assets/images/průvodce_projektem.webp)
+
+Jak slovník, tak aplikační profil je tvořen v [**editoru modelu**](editor-modelu.md).
 
 [**Slovník**](slovníky.md) vytváříme v případě, že potřebujeme definovat nové pojmy - třídy a vlastnosti.
 
