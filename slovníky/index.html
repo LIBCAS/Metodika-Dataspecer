@@ -344,6 +344,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tvorba-slovniku" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tvorba slovníku
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tvorba slovníku">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tridy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Třídy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vlastnosti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vlastnosti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pridani-existujicich-slovniku-do-projektu" class="md-nav__link">
     <span class="md-ellipsis">
       Přidání existujících slovníků do projektu
@@ -431,6 +473,48 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#tvorba-slovniku" class="md-nav__link">
+    <span class="md-ellipsis">
+      Tvorba slovníku
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Tvorba slovníku">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#tridy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Třídy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#atributy" class="md-nav__link">
+    <span class="md-ellipsis">
+      Atributy
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#vlastnosti" class="md-nav__link">
+    <span class="md-ellipsis">
+      Vlastnosti
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#pridani-existujicich-slovniku-do-projektu" class="md-nav__link">
     <span class="md-ellipsis">
       Přidání existujících slovníků do projektu
@@ -456,15 +540,35 @@
 
 
 <h1 id="slovniky">Slovníky</h1>
-<p>V případě, že chci do aplikačního profilu přidat vlastní prvky které nejsou součástí CCMM nebo jiného použitelného slovníku, nadefinuji si je ve svém novém slovníku, který pak použiji v aplikačním profilu.</p>
+<p>Slovníky obsahují identifikátory, názvy a definice tříd a pojmů.
+Slovník je třeba tvořit například pokud chceme do aplikačního profilu přidat vlastní pojmy, které nejsou součástí CCMM nebo jiného použitelného slovníku.
+V takovém případe je nadefinujeme ve svém novém slovníku, který pak použijeme v aplikačním profilu.</p>
+<p>Slovník vytvoříme jako nový projekt typu Slovník, čímž se dostaneme do <a href="../editor-modelu/">editoru modelu</a>.</p>
 <p><img alt="Nový projekt" src="../assets/images/nov%C3%BD_projekt.webp" />
 <img alt="Slovník" src="../assets/images/pr%C5%AFvodce_projektem.webp" /></p>
+<h2 id="tvorba-slovniku">Tvorba slovníku</h2>
+<p>Při tvorbě slovníku je třeba definovat nové třídy, atributy a vlastnosti, případně jejich vztahy, jako definiční obor, obor hodnot či specializační vazba.
+To lze dělat pomocí tlačítka ➕ v příslušné záložce katalogu.</p>
+<h3 id="tridy">Třídy</h3>
+<p>Dialog pro přidání třídy nám umožní vyplnit název, identifikátor, čeho je třída specializací, definici a URL externí dokumentace třídy.
+Ta se hodí, pokud už někde existuje, ale dané specifikace nebyla tvořena v Dataspeceru.
+<img alt="Dialog pro novou třídu" src="../assets/images/slovnik_class.webp" /></p>
+<p>Pokud URL externí dokumentace vyplníme, tak v dokumentaci aplikačního profilu, ve kterém tuto třídu použijeme, povede odkaz právě na externí dokumentaci místo dokumentace slovníku generované z Dataspeceru.</p>
+<h3 id="atributy">Atributy</h3>
+<p>Atribut můžeme přidat buď z katalogu, nebo po vybrání třídy na plátně.
+<img alt="Tlačítko ➕ pro nový atribut" src="../assets/images/add_attribute.webp" /></p>
+<h3 id="vlastnosti">Vlastnosti</h3>
+<p>Vlastnost nebo generalizaci/specializaci lze přidat buď v katalogu, nebo potažením myší ze symbolu 🔗 mezi třídami.
+<img alt="Tažení z 🔗 pro nový vztah" src="../assets/images/new_relationship.gif" /></p>
 <h2 id="pridani-existujicich-slovniku-do-projektu">Přidání existujících slovníků do projektu</h2>
-<p>Můžu využít často používaných slovníků (well known vocabularies), importovat slovník prostřednictvím url (vocabulary from url - je třeba abyl odkaz na slovník v <a href="../slovn%C3%ADk-pojm%C5%AF/#rdf">TTL</a> formátu), případně si nadefinovat vlastní.</p>
-<p><img alt="Přidat" src="../assets/images/add_vocabulary.webp" /></p>
-<p>Vytvořím si nový slovník a přidám nové pojmy (symbol plus). Musím vyplnit název, IRI a definici. 
-Následně si nadefinované pojmy přidám do aplikačního profilu.</p>
-<p><img alt="Slovnik" src="../assets/images/slovnik_class.webp" /></p>
+<p>Pro využití pojmů z existujících slovníků, například pro definiční obor či obor hodnot nějaké vlastnosti, nebo pro specializaci třídy či vlastnosti, je třeba existující slovník přidat jako další model tlačítkem ➕ v sekci Vocabularies v katalogu.
+<img alt="Přidat slovník" src="../assets/images/add_vocabulary.webp" /></p>
+<p>Lze využít často používaných slovníků (well known vocabularies),</p>
+<p><img alt="Přidat často používaný slovník" src="../assets/images/add_vocabulary_well_known.webp" /></p>
+<p>nebo importovat slovník prostřednictvím URL, přičemž je třeba, aby byl slovník dostupný v nějaké serializaci <a href="../slovn%C3%ADk-pojm%C5%AF/#rdf">RDF</a>, a webový server hostující slovník byl nakonfigurován pro podporu techniky <a href="../slovn%C3%ADk-pojm%C5%AF/#cross-origin-resource-sharing-cors">CORS</a>.</p>
+<p><img alt="Přidat vlastní slovník" src="../assets/images/add_vocabulary_custom.webp" /></p>
+<p>Následně budou třídy a vlastnosti ze slovníku přidány do katalogu, a je možné je přidávat na plátno a používat.</p>
+<p><img alt="Přidaný slovník DCAT" src="../assets/images/dcat_added.webp" /></p>
 
 
 
