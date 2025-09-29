@@ -6,7 +6,7 @@ In the Dataspecer interface, a specification is called a project.
 
 ## Project Manager
 
-![Project Manager](../assets/images/manager.webp)
+![Project Manager](../assets/images/manager_eng.webp)
 
 The basic interface is the project manager.
 Each vocabulary and each application profile is a separate project.
@@ -14,7 +14,7 @@ You can click on a project to see its internal structure, but we won't need that
 
 ## Project Options
 
-![Project Options](../assets/images/další_možnosti.webp)
+![Project Options](../assets/images/další_možnosti_eng.webp)
 
 - **Export specification** downloads the specification of the created vocabulary/application profile as a zip archive for web publication, e.g., on [GitHub Pages](https://pages.github.com).
 - **Show documentation (cs/en)** displays a preview of the documentation for the created specification in English or Czech, see [generated documentation](#generated-documentation).
@@ -28,10 +28,10 @@ You can click on a project to see its internal structure, but we won't need that
 
 ## New Specification
 To create a new specification, click on the Project Guide button.
-![New Project](../assets/images/nový_projekt.webp)
+![New Project](../assets/images/nový_projekt_eng.webp)
 
 And choose one of the options:
-![Project Guide](../assets/images/průvodce_projektem.webp)
+![Project Guide](../assets/images/průvodce_projektem_eng.webp)
 
 Both vocabulary and application profile are created in the [**model editor**](editor-modelu.md).
 
