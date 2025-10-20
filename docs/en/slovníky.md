@@ -2,12 +2,12 @@
 
 Vocabularies contain identifiers, names, and definitions of classes and concepts.
 A vocabulary needs to be created, for example, when we want to add our own concepts to the application profile that are not part of CCMM or another usable vocabulary.
-In such a case, we define them in our new vocabulary, which we then use in the application profile.
+In such case, we define them in our new vocabulary, which we then use in the application profile.
 
 We create a vocabulary as a new project of type Vocabulary, which takes us to the [model editor](editor-modelu.md).
 
-![New Project](../assets/images/nový_projekt.webp)
-![Vocabulary](../assets/images/průvodce_projektem.webp)
+![New Project](../assets/images/nový_projekt_eng.webp)
+![Vocabulary](../assets/images/průvodce_projektem_eng.webp)
 
 ## Creating a vocabulary
 

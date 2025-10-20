@@ -1,11 +1,19 @@
 # Nástroj pro správu metadatových profilů: Dataspecer
 Dataspecer je nástroj pro tvorbu, správu a vizualizaci sémantických datových specifikací, tj. slovníků a aplikačních profilů.
 Na jejich základě je možné také odvozovat další technické artefakty, zejména datová schémata (XML, JSON, CSV).
+
+## Možnosti spuštění
+
 Aplikaci můžete vyzkoušet na [demo instanci](https://demo.dataspecer.com/).
-V rozhraní Dataspecer se specifikaci říká projekt.
+
+- Kdokoli může Dataspecer otestovat lokálně pomocí Dockeru.
+- Pomocí Dockeru je možné Dataspecer nasadit lokálně na serveru.
+
+Podrobnější informace o spuštění pomocí Dockeru naleznete na
+[GitHubu Dataspeceru](https://github.com/dataspecer/dataspecer?tab=readme-ov-file#docker-container).
 
 ## Správce projektů
-
+V rozhraní Dataspecer se specifikaci říká projekt.
 ![Správce projektů](../assets/images/manager.webp)
 
 Základním rozhraním je správce projektů.

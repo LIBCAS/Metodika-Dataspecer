@@ -61,8 +61,6 @@ says that Jan Novák has the job title "analyst".
 ## Semantic Data Specifications
 A semantic data specification is a formal description of a data structure that, in addition to the technical definition of data (e.g., types, attributes, relationships), also includes the meaning of this data in a specific domain context. The goal is to ensure unambiguous interpretation and correct understanding of data across different systems, organizations, and users. Such a specification often uses standards such as ontologies, data vocabularies, or models like `RDF`/`OWL`, which enable linking data with their semantics and thus support interoperability, validation, and automated processing.
 
-## Specialization
-
 ## Vocabulary
 A vocabulary is a collection of formally defined concepts (e.g., classes, attributes, and relationships) that serve to describe data structures and metadata. The vocabulary contains specific semantic elements that can be reused across different data models. In the vocabulary, concepts are uniquely identified (e.g., URI) and often derive from existing standards (e.g., `DCAT`, `Dublin Core`, `DataCite`, `FOAF`).
 
