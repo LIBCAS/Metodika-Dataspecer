@@ -281,19 +281,6 @@
         
       
       
-        <label class="md-nav__link md-nav__link--active" for="__toc">
-          
-  
-  
-  <span class="md-ellipsis">
-    Editor modelu
-    
-  </span>
-  
-
-          <span class="md-nav__icon md-icon"></span>
-        </label>
-      
       <a href="./" class="md-nav__link md-nav__link--active">
         
   
@@ -305,52 +292,6 @@
   
 
       </a>
-      
-        
-
-<nav class="md-nav md-nav--secondary" aria-label="Obsah">
-  
-  
-  
-    
-  
-  
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Obsah
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#katalog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Katalog
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ovladaci-panel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ovládací panel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Plátno
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
-</nav>
       
     </li>
   
@@ -442,41 +383,6 @@
     
   
   
-    <label class="md-nav__title" for="__toc">
-      <span class="md-nav__icon md-icon"></span>
-      Obsah
-    </label>
-    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
-      
-        <li class="md-nav__item">
-  <a href="#katalog" class="md-nav__link">
-    <span class="md-ellipsis">
-      Katalog
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#ovladaci-panel" class="md-nav__link">
-    <span class="md-ellipsis">
-      Ovládací panel
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#platno" class="md-nav__link">
-    <span class="md-ellipsis">
-      Plátno
-    </span>
-  </a>
-  
-</li>
-      
-    </ul>
-  
 </nav>
                   </div>
                 </div>
@@ -492,31 +398,24 @@
 
 
 <h1 id="editor-modelu">Editor modelu</h1>
-<p>Editor modelu má tři základní části - Katalog modelů vlevo, plátno vpravo, a ovládací panel nahoře.
-<img alt="Editor modelu" src="../assets/images/cme.webp" /> </p>
-<p>Ve editoru modelu jsou editovány jak <a href="../slovn%C3%ADky/">Slovníky</a>, obsahující definice tříd a vlastností, tak <a href="../aplika%C4%8Dn%C3%AD-profily/">Aplikační profily</a>, obsahující profily tříd a profily vlastností.
-Teoreticky v jednom modelu může být kombinace obojího, metodicky to však nedoporučujeme.</p>
-<h2 id="katalog">Katalog</h2>
-<p>V hlavním rozhraní vidíme po levé straně katalog.
-Katalog ukazuje nahrané slovníky a aplikační profily. seznamy tříd, vlastností, profilů a generalizací (specializací), včetně dědičnostních a profilovacích hierarchií.</p>
-<p><img alt="Katalog" src="../assets/images/katalog.webp" /> </p>
+<p><img alt=" Katalog" src="../assets/images/katalog.webp" /> </p>
+<p>V hlavním rozhraní vidíme po levé straně katalog. Ten obsahuje prvky které můžeme přidat do vlastního aplikačního profilu. </p>
+<p>V horním rozhraní mám možnost práci uložit (tlačítko save). Práci je třeba pravidelně ukládat.
+V Dataspeceru není automatické ukládání.</p>
+<p><img alt=" Ulozit" src="../assets/images/save.webp" /></p>
 <p><strong>Classes (Třídy)</strong>
  <a href="../slovn%C3%ADk-pojm%C5%AF/#trida-class">Třída</a> označuje typ objektů, které sdílejí stejné vlastnosti a význam.</p>
 <p><strong>Relationships(Vztahy)</strong> Vztahy mezi jednotlivými třídami. </p>
-<p><strong>Attributes (Atributy)</strong> <a href="../slovn%C3%ADk-pojm%C5%AF/#atribut-attribute">Atributy</a> jsou vlastnosti jednotlivých tříd.</p>
+<p><strong>Attributes (Atributy)</strong> <a href="../slovn%C3%ADk-pojm%C5%AF/#atribut-attribute">Atributy</a>  jsou vlastnosti jednotlivých tříd.</p>
 <p><strong>Profiles (Profily)</strong> Zde vidíme všechny prvky přidané do vytvořeného <a href="../slovn%C3%ADk-pojm%C5%AF/#aplikacni-profil">Aplikačního profilu</a>. </p>
 <p><strong>Generalizations</strong>
 Obsahuje seznam specializačních vazeb.</p>
-<h2 id="ovladaci-panel">Ovládací panel</h2>
-<p>V ovládacím panelu je nejdůležitějším prvkem možnost práci uložit (tlačítko 💾 Save), případně uložit a editor opustit (tlačítko 💾👋 Save and leave).
-Práci je třeba pravidelně ukládat, v Dataspeceru není automatické ukládání.</p>
-<p><img alt="Uložit" src="../assets/images/save.webp" /></p>
-<h2 id="platno">Plátno</h2>
-<p>Po pravé straně je plátno zobrazující aktuální diagram (view) zobrazující prvky modelu a vztahy mezi nimi.
-V jedné specifikaci může být diagramů více, tvoří a přepínají se v ovládacím panelu nahoře.</p>
-<p><img alt="Vizuální model" src="../assets/images/modelvizualni.webp" /></p>
+<p>Vizuální model
+Po pravé straně je vizuální model.
+Zde jsou zobrazeny všechny používané prvky a vztahy mezi nimi.</p>
+<p><img alt=" Vizualni model" src="../assets/images/modelvizualni.webp" /></p>
 <p>V sekci layout je možné nastavit jakým způsobem se bude vizuální model zobrazovat.</p>
-<p><img alt="Layout" src="../assets/images/layout.webp" /></p>
+<p><img alt=" Layout" src="../assets/images/layout.webp" /></p>
 
 
 

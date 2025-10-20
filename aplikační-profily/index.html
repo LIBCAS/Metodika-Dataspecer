@@ -377,54 +377,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Vytvoření nového aplikačního profilu">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zaciname-profilovat-vsechno-nebo-nic" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vyber-trid-zahrnutych-do-aplikacniho-profilu" class="md-nav__link">
     <span class="md-ellipsis">
-      Začínáme profilovat - všechno nebo nic
+      ▶️ Výběr tříd zahrnutých do aplikačního profilu
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vytvoreni-profilu-tridy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vytvoření profilu třídy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vytvoreni-profilu-atributu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vytvoření profilu atributu
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vytvoreni-profilu-vztahu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vytvoření profilu vztahu
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#co-nakonec" class="md-nav__link">
+  <a href="#pridani-atributu" class="md-nav__link">
     <span class="md-ellipsis">
-      Co nakonec?
+      ▶️ Přidání atributů
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pridani-vztahu-mezi-tridami" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ Přidání vztahů mezi třídami
     </span>
   </a>
   
@@ -500,54 +476,30 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Vytvoření nového aplikačního profilu">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#zaciname-profilovat-vsechno-nebo-nic" class="md-nav__link">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#vyber-trid-zahrnutych-do-aplikacniho-profilu" class="md-nav__link">
     <span class="md-ellipsis">
-      Začínáme profilovat - všechno nebo nic
+      ▶️ Výběr tříd zahrnutých do aplikačního profilu
     </span>
   </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vytvoreni-profilu-tridy" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vytvoření profilu třídy
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vytvoreni-profilu-atributu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vytvoření profilu atributu
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#vytvoreni-profilu-vztahu" class="md-nav__link">
-    <span class="md-ellipsis">
-      Vytvoření profilu vztahu
-    </span>
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#co-nakonec" class="md-nav__link">
+  <a href="#pridani-atributu" class="md-nav__link">
     <span class="md-ellipsis">
-      Co nakonec?
+      ▶️ Přidání atributů
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#pridani-vztahu-mezi-tridami" class="md-nav__link">
+    <span class="md-ellipsis">
+      ▶️ Přidání vztahů mezi třídami
     </span>
   </a>
   
@@ -571,15 +523,15 @@
 
   <h1>Aplikační profily</h1>
 
-<p>Aplikační profil (application profile, AP) definuje, jaké pojmy z jakých specifikací, slovníků či jiných aplikačních profilů, se v daném kontextu používají a jak.
-Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem <a href="https://www.ccmm.cz/">Czech Core Metadata Model (CCMM)</a>.</p>
+<p>Aplikační profil (application profile, AP) v oblasti modelování metadat je soubor pravidel a specifikací, který určuje, jak se mají používat existující metadatové standardy v konkrétním kontextu (v našem případě metadata doménového repozitáře).
+Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš repozitář, je nutné se podrobně seznámit s výchozím metadatovým modelem. <a href="https://techlib.github.io/CCMM/en/">Czech Core Metadata Model (CCMM)</a>.</p>
 <h2 id="co-si-ujasnit-pred-vytvorenim-metadatoveho-profilu-pro-repozitar">Co si ujasnit před vytvořením metadatového profilu pro repozitář</h2>
 <ol>
 <li>
 <p>Potřebujeme vlastní aplikační profil? Pokud CCMM pokrývá mé potřeby, žádný jiný aplikační profil nepotřebuji.</p>
 </li>
 <li>
-<p>Co budeme popisovat? Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu, tj. RDF? Pokud ne, potřebujeme chybějící pojmy dodefinovat ve <a href="../slovn%C3%ADky/">vlastním slovníku</a>, který bude dále použit v novém aplikačním profilu.</p>
+<p>Co budeme popisovat? Umožňuje výchozí metadatový model (CCMM) a dostupné slovníky popsat všechny potřebné entity? Existují oborové slovníky, které je možné pro náš repozitář využít? Jsou dostupné ve vhodném formátu, tj. RDF? Pokud ne, potřebujeme chybějící pojmy dodefinovat ve vlastním slovníku, který bude dále použit v novém aplikačním profilu.</p>
 </li>
 <li>
 <p>Rozmyslíme si, jaké prvky z CCMM a dalších slovníků či profilů převezmeme, a jakým způsobem je budeme používat v našem profilu. Nastavíme pravidla, jak je budeme používat. Např. zda budou povinné, s jakou kardinalitou, apod. Přitom nesmíme porušit pravidla CCMM.</p>
@@ -606,52 +558,57 @@ Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v na
 </li>
 </ol>
 <p><strong>Poznámka:</strong> Doporučujeme promyslet předem; lze jej však později upravit.
-Záložka <em>profile</em> obsahuje všechny slovníky použité ve výchozím metadatovém modelu.
+Záložka <em>profile</em> obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.</p>
-<h3 id="zaciname-profilovat-vsechno-nebo-nic">Začínáme profilovat - všechno nebo nic</h3>
-<p>Jakmile vytvoříme aplikační profil, a pro jednoduchost předpokládejme, že se jedná o profil CCMM, uvítá nás <a href="../editor-modelu/">editor modelu</a> s prázdným plátnem reprezentujícím nový aplikační profil.
-Zde máme dvě možnosti jak postupovat.
-Buďto si z CCMM chceme vybrat, co použijeme, což postupně uděláme pomocí ikony 🧲 u profilů tříd, vlastností a atributů, o které máme zájem, v záložce <code>Profiles</code>.
-<img alt="Akce profilování" src="../assets/images/class_profile.webp" /></p>
-<p>Alternativně můžeme profilovat vše v CCMM, a co nepotřebujeme, postupně odmazávat.
-To uděláme ikonou 🧲 u modelu <code>Czech Core Metadata Model</code> v záložce <code>Vocabularies</code>.
-<img alt="Akce profilování všeho" src="../assets/images/voc_profile.webp" /></p>
-<h3 id="vytvoreni-profilu-tridy">Vytvoření profilu třídy</h3>
-<p>Do aplikačního profilu můžeme přidávat buďto profily tříd, atributů a vlastností ze slovníků v příslušných záložkách katalogu, nebo profily jejich profilů v existujících aplikačních profilech, na záložce <code>Profiles</code>.
-Profil v aktuálním aplikačním profilu vždy vytvoříme ikonkou 🧲.</p>
-<p>Profily tříd, vlastností, atributů a jejich profilů, které jsou v aktuálním aplikačním profilu, uvidíme na záložce <code>Profiles</code>.</p>
-<p>Po kliknutí na 🧲 se otevře okno pro nastavení profilu.
-U tříd je možno upravovat:</p>
+<h2 id="vyber-trid-zahrnutych-do-aplikacniho-profilu">▶️ Výběr tříd zahrnutých do aplikačního profilu</h2>
+<p>Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.</p>
+<p>Záložka <em>profile</em> obsahuje všechny prvky použité ve výchozím metadatovém modelu.</p>
+<p>Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).<br />
+Klikneme na <strong>Create new profile</strong> (symbol podkovy).</p>
+<p>Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozím metadatovém modelu, nebo ji budeme upravovat.</p>
 <p><strong>Name:</strong> Pojmenování třídy.</p>
-<p><strong>IRI</strong> <em>(International Resource Identifier)</em> Identifikátor třídy - musí být unikátní, což Dataspecer nezajišťuje.</p>
+<p><strong>IRI</strong> <em>(International Resource Identifier)</em> Identifikátor třídy.</p>
 <p><strong>Specialization:</strong> Zda se jedná o specializaci jiné třídy.</p>
-<p><strong>Definition:</strong> Definice profilu třídy. Možné uvést i v několika jazycích. </p>
-<p><strong>Usage note:</strong> Poznámka k použití dané třídy v kontextu aplikačního profilu. Např. "V tomto profilu se dataset používá pro XYZ."</p>
-<p><strong>External documentation URL:</strong> Odkaz na externí dokumentaci popisující danou třídu. Tento odkaz se použije v profilech aktuálního profilu místo z tohoto profilu vygenerované dokumentace.</p>
-<p><strong>Role:</strong> Určím zda bude mít profil třídy roli hlavní (main) nebo podpůrnou (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily. Ve výsledné dokumentaci jsou pak profily tříd sdruženy právě podle role - nejprve hlavní, pak až vedlejší.</p>
-<h3 id="vytvoreni-profilu-atributu">Vytvoření profilu atributu</h3>
-<p><img alt="Nový profil atributu" src="../assets/images/new_attr_profile.gif" /></p>
+<p><strong>Definition:</strong> Stručný popis dané třídy. Možné uvést i v několika jazycích.<br />
+<strong>Příklad:</strong> Agent: Any entity carrying out actions with respect to the entities Catalogue and the Catalogued Resources.*</p>
+<p><strong>Usage note:</strong> Poznámka k použití dané třídy. Př. "V tomto profilu se dataset pooužívá pro XYZ."</p>
+<p><strong>External documentation:</strong> Odkaz na externí dokumentaci popisující danou třídu.</p>
+<p><strong>Role:</strong> Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.</p>
+<h2 id="pridani-atributu">▶️ Přidání atributů</h2>
+<p><img alt="Atribut" src="../assets/images/atribut.webp" /></p>
+<p>U tříd je možné  přidat atributy. Atribut je vlastnot třídy.</p>
 <ol>
-<li>V záložce <code>Profiles</code> nebo <code>Attributes</code> vybereme profil atributu nebo atribut, jehož profil chceme vytvořit (jež chceme použít v našem AP), a stiskneme 🧲.</li>
-<li>Nastavíme profil třídy v aktuálním AP, který bude doménou profilu atributu.</li>
-<li>(Volitelně) Můžeme upravit název, identifikátor, definici a poznámku k jeho použití v rámci našeho aplikačního profilu a URL externí dokumentace.</li>
-<li>(Volitelně) Nastavíme kardinalitu <strong>Range cardinality</strong></li>
-<li>(Volitelně) Vybereme datový typ v <strong>Range</strong>, např. <code>xsd:boolean</code>, <code>xsd:string</code>, <code>rdf:langString</code> apod.</li>
-<li>(Volitelně) Vybereme úroveň povinnosti - <code>Undefined</code>, pokud toto v našem AP nepoužíváme, případně <code>Mandatory</code>, <code>Recommended</code> nebo <code>Optional</code>, pokud ano. V rámci diagramu pak budou atributy v sekcích dle této povinnosti.</li>
+<li>
+<p>Atribut přidám symbolem plus. </p>
+</li>
+<li>
+<p>Nadefinujte si pro z čeho vycházíte <strong>Profile of</strong> a pro jakou třídu atribut definujete <strong>Domain</strong>.</p>
+</li>
+<li>
+<p>Přidáme jeho popis (je možné vícejazyčně) <strong>Definition</strong>.</p>
+</li>
+<li>
+<p>Poznámku k jeho použití v rámci našeho aplikačního profilu <strong>Usage note</strong>.</p>
+</li>
+<li>
+<p>Nastavíme kardinalitu - opakovatelnost <strong>Domain cardinality</strong>.</p>
+</li>
+<li>
+<p>Vybereme jaký typ znaků může atribut obsahovat <strong>Range</strong>.</p>
+</li>
 </ol>
-<p><strong>Poznámka:</strong> U atributů a jejich profilů, případně vztahů zobrazených jako atributy, tj. v rámci třídy či profilu třídy, lze měnit pořadí pomocí 🔼🔽 po kliknutí na třídu. Alternativně lze měnit pořadí, a měnit zobrazení vztahů jako atributů v dialogu po stisknutí tlačítka 📏 na třídě.</p>
-<h3 id="vytvoreni-profilu-vztahu">Vytvoření profilu vztahu</h3>
-<p>Pro vytvoření profilu vztahu postupujeme stejně jako u profilu atributu, tj. v katalogu v záložce <code>Relationships</code> nebo <code>Profiles</code> tlačítkem 🧲.</p>
-<p>Jediným rozdílem je to, že potřebujeme vybrat nejen doménu, ale i obor hodnot (range) profilu vztahu, opět jeden z profilů tříd v našem AP.
-Také může mít smysl vyplňovat <strong>Domain cardinality</strong> pro určení kardinality v opačném směru vztahu.</p>
-<p>Zopakujme si, co kardinality znamenají.
-<img alt="Kardinalita vztahu" src="../assets/images/dataset_distribution.webp" /></p>
-<p>V příkladu je mezi profilem třídy <code>Dataset</code>a profilem třídy <code>Distribution</code>profil vazby <code>has distribution</code>, vedoucí z <code>Dataset</code> (domain) do <code>Distribution</code> (range).</p>
-<p>Range cardinality <code>[1..*]</code> znamená, že každá datová sada má vždy alespoň jednu distribuci, ale může jich mít více.
-Domain cardinality <code>[0..1]</code> znamená pro každou distribuci, že může ale nemusí být propojena s datovou sadou, a když, tak maximálně s jednou.</p>
-<h2 id="co-nakonec">Co nakonec?</h2>
-<p>Uložit pomocí tlačítka <code>💾👋 Save and leave</code> a <a href="../dataspecer/#moznosti-projektu">vygenerovat dokumentaci</a>.
-Následně můžeme aplikační profil vystavit na web, a použít třeba při tvorbě jiného aplikačního profilu.</p>
+<h2 id="pridani-vztahu-mezi-tridami">▶️ Přidání vztahů mezi třídami</h2>
+<p>Nyní si přidáme do svého profilu další třídu (funding reference).</p>
+<p>V části relationship přidám vztah mezi těmito třídami (has funding reference)
+<img alt="Relationship" src="../assets/images/relationship_profile.webp" /></p>
+<p><strong>Cardinality</strong>
+Určuje kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.</p>
+<p>Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.</p>
+<p>Kardinalita se často zapisuje ve formátu:</p>
+<p>0..1 – nejvýše jeden výskyt (nepovinný),</p>
+<p>1..1 – právě jeden výskyt (povinný),</p>
+<p>0..* – libovolný počet výskytů (včetně nuly),</p>
+<p>1..* – alespoň jeden výskyt.</p>
 
 
 
