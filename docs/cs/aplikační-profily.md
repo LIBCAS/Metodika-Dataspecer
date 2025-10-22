@@ -11,7 +11,12 @@ Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš r
 3. Rozmyslíme si, jaké prvky z CCMM a dalších slovníků či profilů převezmeme, a jakým způsobem je budeme používat v našem profilu. Nastavíme pravidla, jak je budeme používat. Např. zda budou povinné, s jakou kardinalitou, apod. Přitom nesmíme porušit pravidla CCMM.
 
 Slovníky či aplikační profily, které budeme chtít v Dataspeceru použít, musí být hostovány na webovém serveru podporujícím techniku [Cross origin resource sharing (CORS)](https://fetch.spec.whatwg.org/#http-cors-protocol).
+
 Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v naší moci podporu zajistit, můžeme daný soubor nakopírovat na web, který techniku CORS podporuje, např. [GitHub Pages](https://pages.github.com).
+
+Kromě podpory CORS musí server při importu souboru uvádět také správný typ obsahu (Content-Type).
+Například soubory .ttl musí být poskytovány s typem text/turtle.
+Server raw.githubusercontent.com tento typ neuvádí správně, takže import nefunguje, zatímco GitHub Pages ano.
 
 ## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
