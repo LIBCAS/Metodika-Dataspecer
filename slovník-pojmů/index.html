@@ -440,6 +440,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rizeny-slovnik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Řízený slovník
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#semanticke-datove-specifikace" class="md-nav__link">
     <span class="md-ellipsis">
       Sémantické datové specifikace
@@ -564,6 +573,15 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#rizeny-slovnik" class="md-nav__link">
+    <span class="md-ellipsis">
+      Řízený slovník
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#semanticke-datove-specifikace" class="md-nav__link">
     <span class="md-ellipsis">
       Sémantické datové specifikace
@@ -654,12 +672,22 @@ IRI se používá zejména v prostředí sémantického webu, RDF, ontologií a 
 <pre><code class="language-turtle">ex:JanNovak schema:jobTitle &quot;analytik&quot;
 </code></pre>
 <p>říká, že Jan Novák má pracovní pozici „analytik".</p>
+<h2 id="rizeny-slovnik">Řízený slovník</h2>
+<p>Řízené slovníky určují povolené hodnoty, které lze použít pro danou třídu či atribut (např. výběrem z hodnot ve vkládacím formuláři při vytváření záznamu). Systémy obvykle pracují s více řízenými slovníky, z nichž každý pokrývá jinou oblast popisu. Řízené slovníky se používají proto, aby byl popis dat jednotný, srozumitelný a strojově zpracovatelný.</p>
+<p>Příklady řízených slovníků:</p>
+<p>Typ zdroje </p>
+<p>Jazyk – standardizované jazykové kódy</p>
+<p>Formát souboru – např. PDF, CSV, XML</p>
+<p>MIME typ – např. application/pdf, text/csv</p>
+<p>Přístupová práva – např. veřejný, omezený, neveřejný</p>
+<p>Některé řízené slovníky mohou být přebírány z externích autorit, jiné jsou spravovány lokálně a průběžně aktualizovány podle potřeb dané domény.</p>
 <h2 id="semanticke-datove-specifikace">Sémantické datové specifikace</h2>
 <p>Sémantická datová specifikace je formální popis datové struktury, který kromě technické definice dat (např. typy, atributy, vztahy) zahrnuje také význam těchto dat v konkrétním doménovém kontextu. Cílem je zajistit jednoznačnou interpretaci a správné porozumění datům napříč různými systémy, organizacemi i uživateli. Taková specifikace často využívá standardy jako ontologie, datové slovníky nebo modely typu <code>RDF</code>/<code>OWL</code>, které umožňují propojení dat s jejich sémantikou a tím podporují interoperabilitu, validaci a automatizované zpracování.</p>
 <h2 id="slovnik">Slovník</h2>
 <p>Slovník je kolekce formálně definovaných pojmů (např. tříd, atributů a vztahů), které slouží pro popis datových struktur a metadat. Slovník obsahuje konkrétní sémantické prvky, které lze znovu používat napříč různými datovými modely. Ve slovníku jsou pojmy jednoznačně identifikovány (např. URI) a často vycházejí z existujících standardů (např. <code>DCAT</code>, <code>Dublin Core</code>, <code>DataCite</code>, <code>FOAF</code>).</p>
 <h2 id="trida-class">Třída (class)</h2>
-<p>Třída v datovém modelování označuje typ objektů, které sdílejí stejné vlastnosti a význam. Používá se k popisu kategorií dat, jako jsou např. <code>osoby</code>, <code>adresy</code>, <code>dokumenty</code> nebo <code>distribuční soubory</code>. Každý konkrétní objekt v datech je instancí nějaké třídy. Třídy mohou být hierarchicky uspořádány (např. podtřídy) a mohou mít přiřazené atributy a vztahy.</p>
+<p>Třída v datovém modelování označuje typ objektů, které sdílejí stejné vlastnosti a význam. Používá se k popisu kategorií dat, jako jsou např. <code>osoby</code>, <code>adresy</code>, <code>dokumenty</code> nebo <code>distribuční soubory</code>. Každý konkrétní objekt v datech je instancí nějaké třídy. Třídy mohou být hierarchicky uspořádány (např. podtřídy) a mohou mít přiřazené atributy a vztahy.
+Jedna třída může být použita u více aplikačních profilů.</p>
 <h2 id="vztah">Vztah</h2>
 <p>Popisuje vztahy mezi dvěma třídami aplikačního profilu.</p>
 <p>Příklad:</p>
