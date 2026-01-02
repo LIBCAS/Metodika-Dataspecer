@@ -58,6 +58,23 @@ ex:JanNovak schema:jobTitle "analytik"
 ```
 říká, že Jan Novák má pracovní pozici „analytik".
 
+## Řízený slovník
+Řízené slovníky určují povolené hodnoty, které lze použít pro danou třídu či atribut (např. výběrem z hodnot ve vkládacím formuláři při vytváření záznamu). Systémy obvykle pracují s více řízenými slovníky, z nichž každý pokrývá jinou oblast popisu. Řízené slovníky se používají proto, aby byl popis dat jednotný, srozumitelný a strojově zpracovatelný.
+
+Příklady řízených slovníků:
+
+Typ zdroje 
+
+Jazyk – standardizované jazykové kódy
+
+Formát souboru – např. PDF, CSV, XML
+
+MIME typ – např. application/pdf, text/csv
+
+Přístupová práva – např. veřejný, omezený, neveřejný
+
+Některé řízené slovníky mohou být přebírány z externích autorit, jiné jsou spravovány lokálně a průběžně aktualizovány podle potřeb dané domény.
+
 ## Sémantické datové specifikace
 Sémantická datová specifikace je formální popis datové struktury, který kromě technické definice dat (např. typy, atributy, vztahy) zahrnuje také význam těchto dat v konkrétním doménovém kontextu. Cílem je zajistit jednoznačnou interpretaci a správné porozumění datům napříč různými systémy, organizacemi i uživateli. Taková specifikace často využívá standardy jako ontologie, datové slovníky nebo modely typu `RDF`/`OWL`, které umožňují propojení dat s jejich sémantikou a tím podporují interoperabilitu, validaci a automatizované zpracování.
 
@@ -66,6 +83,7 @@ Slovník je kolekce formálně definovaných pojmů (např. tříd, atributů a 
 
 ## Třída (class)
 Třída v datovém modelování označuje typ objektů, které sdílejí stejné vlastnosti a význam. Používá se k popisu kategorií dat, jako jsou např. `osoby`, `adresy`, `dokumenty` nebo `distribuční soubory`. Každý konkrétní objekt v datech je instancí nějaké třídy. Třídy mohou být hierarchicky uspořádány (např. podtřídy) a mohou mít přiřazené atributy a vztahy.
+Jedna třída může být použita u více aplikačních profilů.
 
 ## Vztah
 Popisuje vztahy mezi dvěma třídami aplikačního profilu.
