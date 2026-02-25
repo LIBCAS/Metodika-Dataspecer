@@ -12,6 +12,8 @@ Pro lokální vvývoj je tedy třeba:
 6. Nainstalovat MkDocs: `pip install mkdocs`
 7. Nainstalovat `mkdocs-material`: `pip install mkdocs-material`
 8. Nainstalovat `mkdocs-static-i18n`: `pip install mkdocs-static-i18n`
+9. Spustit `mkdocs serve` pro vvojové prostředí
+10. Spustit `mkdocs gh-deploy` pro publikaci do branche `gh-pages` a tedy na web
 
 # Acknowledgments
 
