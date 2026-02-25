@@ -66,7 +66,7 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 ## ▶️ Přidání atributů
 
-![Atribut](../assets/images/atribut.webp)
+![Atribut](../assets/images/add_attribute.webp)
 
 U tříd je možné  přidat atributy. Atribut je vlastnot třídy.
 

@@ -70,7 +70,7 @@ For classes, it is then necessary to add attributes.
 
 2. Define what you are based on **Profile of** and for which class you define the attribute **Domain**.
 
-![Attribute](../assets/images/atribut.webp)
+![Attribute](../assets/images/add_attribute.webp)
 
 ## ▶️ Adding relationships between classes
 Now we add another class to our profile (funding reference).
