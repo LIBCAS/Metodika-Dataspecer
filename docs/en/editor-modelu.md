@@ -12,13 +12,13 @@ The catalog shows loaded vocabularies and application profiles, lists of classes
 ![Catalog](../assets/images/katalog.webp) 
 
 **Classes**
- [Class](slovník-pojmů.md#trida-class) designates a type of objects that share the same properties and meaning.
+ [Class](slovník-pojmů.md#class) designates a type of objects that share the same properties and meaning.
 
 **Relationships** Relationships between individual classes.
 
-**Attributes** [Attributes](slovník-pojmů.md#atribut-attribute) are properties of individual classes.
+**Attributes** [Attributes](slovník-pojmů.md#attribute) are properties of individual classes.
 
-**Profiles** Here we see all elements added to the created [Application Profile](slovník-pojmů.md#aplikacni-profil).
+**Profiles** Here we see all elements added to the created [Application Profile](slovník-pojmů.md#application-profile).
 
 **Generalizations**
 Contains a list of specialization relationships.
