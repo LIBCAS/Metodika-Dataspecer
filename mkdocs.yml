@@ -17,6 +17,7 @@ plugins:
             - Editor modelu: editor-modelu.md
             - Slovníky: slovníky.md
             - Aplikační profily: aplikační-profily.md
+            - Aplikační profily datových struktur: aplikační-profily-datových-struktur.md
             - Slovník pojmů: slovník-pojmů.md
         - locale: en
           name: English
@@ -28,6 +29,7 @@ plugins:
             - Model Editor: editor-modelu.md
             - Vocabularies: slovníky.md
             - Application Profiles: aplikační-profily.md
+            - Application Profiles of Data Structures: aplikační-profily-datových-struktur.md
             - Glossary: slovník-pojmů.md
 site_url: https://libcas.github.io/Metodika-Dataspecer/
 site_dir: site

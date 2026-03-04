@@ -10,42 +10,46 @@ Než začneme v Datasecpeceru vytvářet samotný aplikační profil pro náš r
 
 3. Rozmyslíme si, jaké prvky z CCMM a dalších slovníků či profilů převezmeme, a jakým způsobem je budeme používat v našem profilu. Nastavíme pravidla, jak je budeme používat. Např. zda budou povinné, s jakou kardinalitou, apod. Přitom nesmíme porušit pravidla CCMM.
 
-Slovníky či aplikační profily, které budeme chtít v Dataspeceru použít, musí být hostovány na webovém serveru podporujícím techniku [Cross origin resource sharing (CORS)](https://fetch.spec.whatwg.org/#http-cors-protocol).
-
-Pokud jsou hostovány na serveru, který techniku CORS nepodporuje, a není v naší moci podporu zajistit, můžeme daný soubor nakopírovat na web, který techniku CORS podporuje, např. [GitHub Pages](https://pages.github.com).
-
-Kromě podpory CORS musí server při importu souboru uvádět také správný typ obsahu (Content-Type).
-Například soubory .ttl musí být poskytovány s typem text/turtle.
-Server raw.githubusercontent.com tento typ neuvádí správně, takže import nefunguje, zatímco GitHub Pages ano.
-
 ## Vytvoření nového aplikačního profilu
 V hlavním menu zvolte možnost „Průvodce projektem“ – Vytvořit aplikační profil.
 
 ![Nový projekt](../assets/images/nový_projekt.webp)
+
+Vyberte "Aplikační profil"
+
 ![Průvodce projektem](../assets/images/nový_ap.webp)
 
-1. Zadejte **název projektu** (např. „CCMM AP pro doménu XY“).
+1. Do **URL** vložte URL specifikace, ze které chcete aplikační profil vytvořit. 
+   Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:
+   [https://techlib.github.io/CCMM/en/](https://techlib.github.io/CCMM/en/).
+   Pokud už teď víte, že chcete profilovat i další specifikace, volžte na další řádky i jejich URL.
 
-2. Vložte **URL specifikaci** modelu, ze kterého chcete aplikační profil vytvořit.  
-   Pokud vytváříte aplikační profil pro CCMM, vložte link na něj:  
-   [https://techlib.github.io/CCMM/en/](https://techlib.github.io/CCMM/en/)
+2. Nechte vybrané **Autoprofil** - vytovří se tím profil celého CCMM (případně i dalších specifikací), včetně datových struktur. V editoru modelu nebudou profily tříd a vlastností přidány na plátno - to lze udělat ručně - v profilu však budou.
 
-3. Vyplňte **Base IRI** – základní IRI (Internationalized Resource Identifier),  
-   pod kterým budou identifikovány prvky vašeho profilu: `https://example.com/profile/mujprofil/`
+3. Zadejte **Název** (např. „CCMM AP pro doménu XY“), případně **Popis**
+
+4. Vyplňte **Base IRI** – základ IRI (Internationalized Resource Identifier),  
+   prvků vašeho profilu: `https://example.com/profile/mujprofil#`
 
    **Poznámka:** Doporučujeme promyslet předem; lze jej však později upravit.
 Záložka *profile* obsahuje všechny slovniky použité ve výchozím metadatovém modelu.
 Mohu si zobrazit co obsahuje zvolený slovník.
 
+![Informace o novém aplikačním profilu](../assets/images/nový_ap_info.webp)
 
-## ▶️ Výběr tříd zahrnutých do aplikačního profilu
+Po vytvoření nového aplikačního profilu se otevře editor modelu.
 
-Po vytvoření nového aplikačního profilu se nám otevře editor aplikačního profilu.
+Záložka *Profiles* obsahuje všechny profily tříd a vlastností z aplikačních profilů v hierarchii.
 
-Záložka *profile* obsahuje všechny prvky použité ve výchozím metadatovém modelu.
+Zde mohu odebírat nepotřebné profily tříd a vlastností, případně prohlížet existující.
 
-Zvolím položku, kterou chci přidat do mého aplikačního profilu (např. Agent).  
-Klikneme na **Create new profile** (symbol podkovy).
+Pro přidání nového profilu třídy či vlastnosti je třeba najít to, co chci profilovat, a vytvořit profil tlačítkem 🧲.
+To může být profil třídy, profil atributu či profil vztahu v případě, že chci profilovat něco z existujícího aplikačního profilu.
+Zrovnatak to může být třída, atribut či vztah, pokud chci profilovat něco přímo ze slovníku.
+
+## Přidání profilů tříd
+
+Klikneme na 🧲 u třídy či profilu třídy, který chceme profilovat - přidat do aktuálního aplikačního profilu.
 
 Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozím metadatovém modelu, nebo ji budeme upravovat.
 
@@ -64,44 +68,45 @@ Rozhodneme se, zda chceme třídu převzít tak, jak je definována ve výchozí
 
 **Role:** Určím zda bude role hlavní (main) nebo podpůrná (supportive). Hlavní role jsou důležité prvky metadatového profilu př. dataset, katalog. Podpůrná zahrnuje méně důležité např. téma. Role se nedědí mezi profily.
 
-## ▶️ Přidání atributů
+## Přidání profilů atributů
 
-![Atribut](../assets/images/add_attribute.webp)
+![Profil atributu](../assets/images/add_attribute.webp)
 
-U tříd je možné  přidat atributy. Atribut je vlastnot třídy.
+U profilů tříd je možné přidat profily atributů.
+To uděláme nejlépe nalezením atributu či profilu atributu v katalogu a kliknutím na 🧲.
+Alternativně mohu profil atributu přidat symbolem ➕ (plus) u profilu třídy na plátně, je pak ale třeba říct, čeho nový profil atributu je profilem.
 
-1. Atribut přidám symbolem plus. 
+1. Můžeme, ale nemusíme, měnit **Name**.
 
-2. Nadefinujte si pro z čeho vycházíte **Profile of** a pro jakou třídu atribut definujete **Domain**.
+2. Můžeme, ale nemusíme měnit **Definition**.
 
-3. Přidáme jeho popis (je možné vícejazyčně) **Definition**.
+3. Můžeme přidat poznámku k použití v rámci našeho aplikačního profilu **Usage note**.
 
-4. Poznámku k jeho použití v rámci našeho aplikačního profilu **Usage note**.
+4. Nastavíme kardinalitu - opakovatelnost **Domain cardinality**.
 
-5. Nastavíme kardinalitu - opakovatelnost **Domain cardinality**.
+5. Vybereme jaký typ znaků může atribut obsahovat **Range**.
 
-6. Vybereme jaký typ znaků může atribut obsahovat **Range**.
+## Přidání profilů vztahů mezi třídami
 
-## ▶️ Přidání vztahů mezi třídami
-Nyní si přidáme do svého profilu další třídu (funding reference).
+V části _Relationship_ přidáme profil vztahu mezi třídami profilující vztah ze slovníku.
+![Profil vztahu](assets/images/relationship_profile.webp)
 
-V části relationship přidám vztah mezi těmito třídami (has funding reference)
-![Relationship](assets/images/relationship_profile.webp)
+Zde musíme specifikovat, které profily tříd jsou **domain** a **range**.
 
 **Cardinality**
 Určuje kolikrát může nebo musí být určitý vztah nebo vlastnost mezi dvěma třídami použit. Jinak řečeno, popisuje počet výskytů, které jsou povolené nebo požadované mezi objekty.
 
-Například pokud má datová sada (Dataset) vlastnost title, kardinalita 1..1 znamená, že musí mít právě jeden název. Pokud by byla kardinalita 0..*, může mít žádný, jeden nebo více názvů.
+Například pokud má datová sada (Dataset) vlastnost title, kardinalita `1..1` znamená, že musí mít právě jeden název. Pokud by byla kardinalita `0..*`, může mít žádný, jeden nebo více názvů.
 
 Kardinalita se často zapisuje ve formátu:
 
-0..1 – nejvýše jeden výskyt (nepovinný),
+`0..1` – nejvýše jeden výskyt (nepovinný),
 
-1..1 – právě jeden výskyt (povinný),
+`1..1` – právě jeden výskyt (povinný),
 
-0..* – libovolný počet výskytů (včetně nuly),
+`0..*` – libovolný počet výskytů (včetně nuly),
 
-1..* – alespoň jeden výskyt.
+`1..*` – alespoň jeden výskyt.
 
 
 
